@@ -23,56 +23,24 @@ return {
         })
 
         -- mappings
-        local builtin = require('telescope.builtin')
-        vim.keymap.set("n", "<leader>ff", builtin.find_files, {
-            desc = "Find files",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>fw", builtin.live_grep, {
-            desc = "Find words",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>fb", builtin.buffers, {
-            desc = "Find buffers",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
-            desc = "Find help",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gb", builtin.git_branches, {
-            desc = "Git branches",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gc", builtin.git_commits, {
-            desc = "Git commits",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gs", builtin.git_status, {
-            desc = "Git status",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, {
-            desc = "LSP document symbols",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "gr", builtin.lsp_references, {
-            desc = "Go to references",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "gd", builtin.lsp_definitions, {
-            desc = "Go to definition",
-            noremap = true,
-            silent = true,
-        })
+        local builtin = require("telescope.builtin")
+        local keymap = require("extras.utils").keymap
+
+        keymap("n", "<leader>ff", builtin.find_files, "Find files")
+        keymap("n", "<leader>fg", builtin.git_files, "Find git files")
+        keymap("n", "<leader>fw", builtin.live_grep, "Find words")
+        keymap("n", "<leader>fc", builtin.grep_string, "Find word under cursor")
+        keymap("n", "<leader>fb", builtin.buffers, "Find buffers")
+        keymap("n", "<leader>fh", builtin.help_tags, "Find help")
+        keymap("n", "<leader>fo", builtin.oldfiles, "Find old files")
+        keymap("n", "<leader>fr", builtin.resume, "Resume find")
+        keymap("n", "<leader>fd", builtin.diagnostics, "Find diagnostics")
+        keymap("n", "<leader>fk", builtin.keymaps, "Find keymaps")
+        keymap("n", "<leader>fC", builtin.commands, "Find commands")
+        keymap("n", "<leader>gb", builtin.git_branches, "Git branches")
+        keymap("n", "<leader>gc", builtin.git_commits, "Git commits")
+        keymap("n", "<leader>gs", builtin.git_status, "Git status")
+        keymap("n", "<leader>ls", builtin.lsp_document_symbols, "LSP document symbols")
+        keymap("n", "<leader>lS", builtin.lsp_workspace_symbols, "LSP workspace symbols")
     end,
 }

@@ -355,15 +355,15 @@ return {
                     shade = tonumber(shade)
                     local bg = vim.tbl_get(colors, color, shade)
                     if bg then
-                        local hl = "MiniHipatternsTailwind" .. color .. shade
-                        if not hl[hl] then
-                            hl[hl] = true
+                        local group = "MiniHipatternsTailwind" .. color .. shade
+                        if not hl[group] then
+                            hl[group] = true
                             local bg_shade = shade == 500 and 950 or shade < 500 and 900 or 100
                             local fg = vim.tbl_get(colors, color, bg_shade)
-                            vim.api.nvim_set_hl(0, hl, { bg = "#" .. bg, fg = "#" .. fg })
+                            vim.api.nvim_set_hl(0, group, { bg = "#" .. bg, fg = "#" .. fg })
                         end
 
-                        return hl
+                        return group
                     end
                 end,
                 extmark_opts = { priority = 2000 },

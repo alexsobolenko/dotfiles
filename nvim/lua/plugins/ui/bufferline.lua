@@ -7,6 +7,8 @@ return {
     },
     config = function()
         local icons = require("extras.icons")
+        local keymap = require("extras.utils").keymap
+
         require("bufferline").setup({
             options = {
                 close_command = "bdelete! %d",
@@ -66,28 +68,12 @@ return {
         })
 
         -- mappings
-        vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", {
-            desc = "Next buffer",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", {
-            desc = "Previous buffer",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>bc", ":bd!<CR>", {
-            desc = "Close buffer",
-            noremap = true,
-            silent = true,
-        })
+        keymap("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", "Next buffer")
+        keymap("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", "Previous buffer")
+        keymap("n", "<leader>bc", "<cmd>bd!<CR>", "Close buffer")
 
         for i = 1, 9 do
-            vim.keymap.set("n", "<leader>" .. i, ":BufferLineGoToBuffer " .. i .. "<CR>", {
-                desc = "Go to buffer " .. i,
-                noremap = true,
-                silent = true,
-            })
+            keymap("n", "<leader>" .. i, "<cmd>BufferLineGoToBuffer " .. i .. "<CR>", "Go to buffer " .. i)
         end
     end,
 }

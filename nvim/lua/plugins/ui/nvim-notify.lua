@@ -2,10 +2,15 @@
 
 return {
     "rcarriga/nvim-notify",
+    dependencies = {
+        { "nvim-telescope/telescope.nvim" },
+    },
     keys = {
         {
             "<leader>nd",
-            ":lua vim.notify('', vim.log.levels.DEBUG, { title = 'Dismiss', timeout = 0 })<CR>",
+            function()
+                require("notify").dismiss({ silent = true, pending = true })
+            end,
             desc = "Dismiss all notifications",
         },
         {

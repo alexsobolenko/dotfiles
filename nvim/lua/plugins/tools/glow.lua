@@ -9,10 +9,6 @@ return {
         })
 
         -- mappings
-        vim.keymap.set("n", "<leader>mp", ":Glow<CR>", {
-            desc = "Markdown preview",
-            noremap = true,
-            silent = true,
-        })
+        require("extras.utils").keymap("n", "<leader>mp", "<cmd>Glow<CR>", "Markdown preview")
     end,
 }

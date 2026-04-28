@@ -5,28 +5,13 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     config = function()
         local substitute = require("substitute")
+        local keymap = require("extras.utils").keymap
         substitute.setup()
 
         -- mappings
-        vim.keymap.set("n", "s", substitute.operator, {
-            desc = "Substitute with notion",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "ss", substitute.line, {
-            desc = "Substitute line",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "S", substitute.eol, {
-            desc = "Substitute to end of line",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("x", "s", substitute.visual, {
-            desc = "Substitute in visual mode",
-            noremap = true,
-            silent = true,
-        })
+        keymap("n", "s", substitute.operator, "Substitute with motion")
+        keymap("n", "ss", substitute.line, "Substitute line")
+        keymap("n", "S", substitute.eol, "Substitute to end of line")
+        keymap("x", "s", substitute.visual, "Substitute in visual mode")
     end,
 }

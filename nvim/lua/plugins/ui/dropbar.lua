@@ -4,22 +4,11 @@ return {
     "Bekaboo/dropbar.nvim",
     config = function()
         local dropbar_api = require("dropbar.api")
+        local keymap = require("extras.utils").keymap
 
         -- mappings
-        vim.keymap.set("n", "<leader>;", dropbar_api.pick, {
-            desc = "Pick symbols in winbar",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "[;", dropbar_api.goto_context_start, {
-            desc = "Go to start of current context",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "];", dropbar_api.select_next_context, {
-            desc = "Select next context",
-            noremap = true,
-            silent = true,
-        })
+        keymap("n", "<leader>;", dropbar_api.pick, "Pick symbols in winbar")
+        keymap("n", "[;", dropbar_api.goto_context_start, "Go to start of current context")
+        keymap("n", "];", dropbar_api.select_next_context, "Select next context")
     end,
 }

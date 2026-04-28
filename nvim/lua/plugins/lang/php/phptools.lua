@@ -2,12 +2,9 @@ return {
     "pcyman/phptools.nvim",
     config = function()
         require("phptools").setup()
+        local keymap = require("extras.utils").keymap
 
         -- mappings
-        vim.keymap.set("n", "<leader>gg", ":PhpToolsGetSet<CR>", {
-            desc = "PHP generate getters and setters",
-            noremap = true,
-            silent = true
-        })
+        keymap("n", "<leader>gg", "<cmd>PhpToolsGetSet<CR>", "PHP generate getters and setters")
     end,
 }

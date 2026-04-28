@@ -57,10 +57,6 @@ return {
         })
 
         -- mappings
-        vim.keymap.set("n", "<leader>e", ":Neotree left<CR>", {
-            desc = "Neotree left panel",
-            noremap = true,
-            silent = true,
-        })
+        require("extras.utils").keymap("n", "<leader>e", "<cmd>Neotree left<CR>", "Neotree left panel")
     end,
 }
