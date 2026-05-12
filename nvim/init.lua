@@ -21,6 +21,12 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.filetype.add({
+    extension = {
+        json = "jsonc",
+    },
+})
+
 require("config.settings")
 require("config.autocmds")
 require("config.mappings")

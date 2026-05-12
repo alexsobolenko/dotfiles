@@ -1,17 +1,22 @@
 # Config DOTFILES
 
+## VISUAL STUDIO CODE
+
+1. ln -s ~/dotfiles/vscode ~/.config/Code/User
+
 ## WEZTERM
 
--
+1. ln -s ~/dotfiles/wezterm ~/.config/wezterm
 
 ## NEOVIM
 
 ### Installation
 
-1. Install `neovim` (ver >= 0.10)
-2. Install `composer`
-3. Install `nodejs`
-4. Install following npm packages globally:
+1. ln -s ~/dotfiles/wezterm ~/.config/wezterm
+2. Install `neovim` (ver >= 0.10)
+3. Install `composer`
+4. Install `nodejs`
+5. Install following npm packages globally:
     - `@volar/server`
     - `@vue/language-server`
     - `dockerfile-language-server-nodejs`
@@ -23,9 +28,9 @@
     - `vls`
     - `vscode-langservers-extracted`
     - `yaml-language-server`
-5. Install `lazygit` to use `lazygit` plugin
-6. Install `ripgrep` to use `telescope` plugin
-7. Install `xclip` (or another clipboard utility) to use OS clipboard
+6. Install `lazygit` to use `lazygit` plugin
+7. Install `ripgrep` to use `telescope` plugin
+8. Install `xclip` (or another clipboard utility) to use OS clipboard
 
 ### Configuration
 
