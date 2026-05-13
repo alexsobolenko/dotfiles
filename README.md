@@ -12,7 +12,7 @@
 
 ### Installation
 
-1. ln -s ~/dotfiles/wezterm ~/.config/wezterm
+1. ln -s ~/dotfiles/nvim ~/.config/nvim
 2. Install `neovim` (ver >= 0.10)
 3. Install `composer`
 4. Install `nodejs`
