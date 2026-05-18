@@ -1,0 +1,641 @@
+: 1672219094:0;git ci -m 'commit message'
+: 1672219095:0;git diff
+: 1672219096:0;git st
+: 1672224762:0;git co -- .
+: 1672224763:0;git co master
+: 1672224764:0;git co develop
+: 1672224765:0;git co feature-123
+: 1672224766:0;git co hotfix-456
+: 1672224767:0;git co -b feature-789
+: 1672224768:0;git co -b hotfix-012
+: 1672237950:0;git br -D feature-345
+: 1672237951:0;git br -D hotfix-678
+: 1672238417:0;git push origin master
+: 1672238418:0;git push origin develop
+: 1672238419:0;git push origin feature-901
+: 1672238420:0;git push origin hotfix-234
+: 1672238427:0;git pull origin master
+: 1672238428:0;git pull origin develop
+: 1672238429:0;git pull origin feature-901
+: 1672238430:0;git pull origin hotfix-234
+: 1672331055:0;php -S localhost:8000 -t public
+: 1672331058:0;php -S localhost:8000
+: 1672331059:0;cat ~/work/docs/досту�пу�.txt
+: 1673089183:0;sudo dpkg -i *.dev
+: 1673089465:0;sudo apt install apache2 php7.4 libapache2-mod-php7.4 php7.4-mysql php7.4-sqlite3 php8.1 libapache2-mod-php8.1 php8.1-mysql php8.1-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml
+: 1673091090:0;sudo apt install htop mc
+: 1673091432:0;sudo apt install p7zip
+: 1673091532:0;sudo apt install vagrant virtualbox vlc
+: 1673091702:0;sudo apt install apt-transport-https audacious build-essential ca-certificates checkinstall cheese conky curl doublecmd-gtk fbreader filezilla flameshot gimp git gnupg-agent guake htop lsb-release mc mednaffe neofetch openjdk-8-jdk php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-commonphp7.4-intl php7.4-imap php7.4-imagick php8.0 php8.0-mysql php8.0-sqlite3 php8.0-curl php8.0-cgi php8.0-gd php8.0-zip php8.0-mbstring php8.0-xml php8.0-xmlrpc php8.0-common php8.0-intl php8.0-imap php8.0-imagick php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-intl php8.1-imap php8.1-imagick p7zip python3-apport python3-problem-report quadrapassel qbittorrent software-properties-common sqlite3 sublime-text tree unzip vagrant virtualbox vlc wget wkhtmltopdf xvfb zsh
+: 1673096710:0;sudo apt install libsasl2-2 libsasl2-modules-db
+: 1673097153:0;sudo apt install dirmngr ca-certificates software-properties-common gnupg gnupg2 apt-transport-https curl -y
+: 1673097166:0;sudo dpkg --add-architecture i386
+: 1673097194:0;sudo apt install steam-installer -y
+: 1673097277:0;sudo apt autoremove --purge
+: 1673357775:0;php bin/console assets:install
+: 1673366268:0;php bin/console doctrine:mapping:info
+: 1673366269:0;php bin/console doctrine:database:create
+: 1673366270:0;php bin/console doctrine:database:drop --force
+: 1673366271:0;php bin/console doctrine:migrations:migrate
+: 1673366272:0;php bin/console doctrine:migrations:diff
+: 1673366273:0;php bin/console doctrine
+: 1673366274:0;php bin/console cache:clear
+: 1673366275:0;php bin/console debug:router
+: 1673466321:0;sudo apt install gstreamer1.0-pipewire libegl-mesa0 libgbm1 libgl1-mesa-dri libglapi-mesa libglx-mesa0 libpipewire-0.3-0 libpipewire-0.3-modules libspa-0.2-modules libxatracker2 mesa-va-drivers\
+  mesa-vdpau-drivers mesa-vulkan-drivers openssh-client osinfo-db pipewire pipewire-bin
+: 1673466365:0;sudo apt install mesa-vdpau-drivers mesa-vulkan-drivers openssh-client osinfo-db
+: 1673844988:0;git clone git@git.cinet.ru:cinet/redmine_charts.git
+: 1674054579:0;php vendor/bin/simple-phpunit -c ./phpunit.xml.dist --coverage-text --colors=never
+: 1674054849:0;php bin/console doctrine:database:drop --env=test
+: 1674056390:0;git format-patch -1 aba939e05584a7b2dad6a0686ec629a4576af8ef
+: 1674109433:0;cd redmine/plugins/redmine_charts
+: 1674119829:0;git config pull.ff only
+: 1674119904:0;git co -b feature-21804
+: 1674465388:0;php vendor/bin/simple-phpunit -c ./phpunit.xml.dist --coverage-text --colors=never --group=atm_plugin_bundle__api1
+: 1674476172:0;php bin/console cib_site:admin:create_user_admin
+: 1674476566:0;php bin/console sns
+: 1674476568:0;php bin/console sms
+: 1674477574:0;git br -D feature-21705
+: 1674477717:0;git push origin feature-21705
+: 1674566967:0;sudo apt purge steam
+: 1674567086:0;sudo apt install steam
+: 1674567109:0;sudo dpkg -i /win/d/soft/deb/steam_latest.deb
+: 1674567191:0;sudo apt install libc6-i386
+: 1674655316:0;mkdir branches
+: 1674655330:0;touch .gitkeep
+: 1674655565:0;php bin/console cibsite:export:files
+: 1674657540:0;git rm public/branches/export-files/atm-list.csv
+: 1674717764:0;docker exec -ti 57-mysql-1 sh
+: 1674723479:0;yarn start
+: 1674726048:0;tar -cvzf release-2023-01-26.tar.gz 0001-fix-security-access-control.patch
+: 1674734997:0;git apply --check -v ../0001-fix-security-access-control.patch
+: 1674832774:0;bundle exec rake test TEST="plugins/redmine_charts/test/**/*_test.rb" RAILS_ENV=test_sqlite3
+: 1674834015:0;docker restart 80-mysql-1
+: 1675148048:0;cat 0001-Hotfix-17907.patch
+: 1675154161:0;python app.py 14 4
+: 1675154165:0;python3 app.py 14 4
+: 1675156141:0;nano app.py
+: 1675179001:0;git pull origin add-dockerfile
+: 1675334826:0;php bin/console debug:router app_api_v1_esg_request
+: 1675335710:0;curl http://localhost:8000/api/export
+: 1675336603:0;php bin/console cache
+: 1675336614:0;php bin/console ca:wa
+: 1675621674:0;php bin/console ca:cl --env=prod
+: 1675666609:0;sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+: 1675762438:0;git hist | grep template
+: 1675762452:0;git log | grep 0e210a5b
+: 1675777478:0;sudo apt install casper fonts-noto-color-emoji grub-efi-amd64-bin grub-efi-amd64-signed
+: 1675833102:0;sudo apt install libxml2:i386
+: 1675840528:0;sudo apt install blender
+: 1676189987:0;php bin/console cache:clear --no-warmup
+: 1676189993:0;php bin/console cache:warmup
+: 1676190112:0;php bin/console make:admin:dashboard
+: 1676190704:0;php bin/console make:admin:crud
+: 1676279905:0;php bin/console doctrine:schema:drop --force --env=test
+: 1676290105:0;sudo apt install alsa-ucm-conf firmware-sof-signed code docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin less linux-firmware sublime-text
+: 1676360188:0;ls -la var/db
+: 1676360520:0;git add var/db/.gitkeep
+: 1676361320:0;git feature-17907-poll
+: 1676536608:0;sudo apt install ubuntu-restricted-extras
+: 1676537629:0;sudo apt install chrome-gnome-shell
+: 1676538318:0;sudo apt install cheese flameshot blender qbittorrent fbreader
+: 1676538398:0;sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+: 1676538423:0;sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"
+: 1676538468:0;docker --version
+: 1676539535:0;docker context ps
+: 1676989429:0;yarn add imask
+: 1676993059:0;yarn remove imask
+: 1677043497:0;sudo apt install grub-efi-amd64-bin grub-efi-amd64-signed shim-signed
+: 1677072703:0;git lohg
+: 1677678111:0;git hisy
+: 1677756648:0;make гз
+: 1677756651:0;make up
+: 1677756922:0;make destroy
+: 1678119709:0;lsblk
+: 1678441014:0;git checkout -b item-answers
+: 1678783999:0;git ci -m "
+: 1679056377:0;git pll
+: 1679411746:0;git add.
+: 1679514782:0;php bin/console doctrine:migrations:execute --down 'Application\Migrations\Version20230322194648'
+: 1679832055:0;git clone https://github.com/wate/redmine_periodic_task.git plugins/periodictask
+: 1679925104:0;yarn ins
+: 1680599905:0;sudo add-apt-repository ppa:osmoma/audio-recorder
+: 1680600318:0;sudo apt install audacious
+: 1680789224:0;./install.sh -a
+: 1680852455:0;php bin/console doctrine:database:create --env=test --connection=default
+: 1680852466:0;php bin/console doctrine:schema:create --env=test --em=default
+: 1680852473:0;php bin/console soap:check:cib:connect --env=test
+: 1681200829:0;sudo apt install libllvm15 libllvm15:i386
+: 1681321755:0;php -S localhost:8000
+: 1682084511:0;git doff
+: 1683795182:0;sudo apt install code
+: 1683809641:0;git fetch
+: 1684560384:0;sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+: 1684560528:0;sudo apt install grub-customizer
+: 1685944140:0;npm --help
+: 1685944150:0;npm i --help
+: 1686211970:0;sudo add-apt-repository ppa:ubuntuhandbook1/avidemux
+: 1686211996:0;sudo apt install avidemux-qt
+: 1686224523:0;docker logs redmine_docker4developer-redmine-1
+: 1686737067:0;make fuck
+: 1686745729:0;git fo hotfix-22663
+: 1687631582:0;php bin/console office_plugin:fix_worktime
+: 1687632130:0;git git hist
+: 1687781044:0;git st | grep 'husky'
+: 1688029682:0;git fetch]'
+: 1688400609:0;git mst
+: 1688462834:0;sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
+: 1688473455:0;git merge dev
+: 1688474514:0;git dd .
+: 1688722158:0;grep -lr "# version-enterprise-start" ./ | grep -v $0 | xargs sed -i "/\# version-start-start/,/# version-start-end/d"
+: 1688917995:0;docker container prune
+: 1688923756:0;sudo apt install symfony-cli
+: 1688998337:0;git cherry-pick a92a16d
+: 1690982353:0;git dif
+: 1691914169:0;git fetch'
+: 1691944091:0;ruby
+: 1691944203:0;sudo apt install gjs libgjs0g
+: 1691944841:0;bundle init
+: 1691944943:0;bundle
+: 1691945147:0;bundle main.rb
+: 1691945374:0;sudo apt install rbenv
+: 1691945662:0;bundle install --without production
+: 1692248589:0;sudo apt install quadrapassel
+: 1693142508:0;make dc_stop dc_build
+: 1693142530:0;make dc_start
+: 1693143506:0;make dc_build dc_start
+: 1693143533:0;make stop build start
+: 1693152144:0;docker stop 3653a5fce078
+: 1693377174:0;git e
+: 1693413379:0;sudo apt install krita krita-l10n
+: 1693414688:0;make dc_up
+: 1693416094:0;make app_bash
+: 1693830453:0;docker login docker-registry.webinar.ru
+: 1693900083:0;docker compose exec php ls -lan /tmp/
+: 1693900781:0;docker rmi octopus-php
+: 1694001596:0;yarn d
+: 1694006323:0;yarn b
+: 1694094185:0;docker compose p
+: 1694161449:0;docker compose down octopus-rabbitmq-1
+: 1694502911:0;yarn build_all
+: 1694617413:0;docker compose -f docker-compose.dev.yml d
+: 1695224451:0;yarn index.html
+: 1695224459:0;yarn public
+: 1695306243:0;docker compose restart php
+: 1695912919:0;sudo apt install qemu-block-extra qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86 qemu-utils
+: 1695997049:0;php bin/console do:da:cr
+: 1695997058:0;php bin/console do:mi:mi
+: 1696051870:0;php bin/console app:purchase:create
+: 1696053772:0;php bin/console app:purchase:update '018ae4ae-5128-7e61-ad6b-c5ae191c6e60' pending
+: 1696055177:0;git remote add origin git@github.com:alexsobolenko/test_app.git
+: 1696748210:0;docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" "$(docker-compose ps -q php)"
+: 1696764691:0;docker ece
+: 1696864488:0;docker psd
+: 1697037949:0;docker network inspect octopus_default
+: 1697120927:0;git feth
+: 1697208000:0;php bin/console security:system-users:create-admin
+: 1697444418:0;git sst
+: 1697454222:0;git pus
+: 1697457641:0;php bin/console debug:event-dispatcher
+: 1697458469:0;git nst
+: 1697544547:0;docker compose --help
+: 1697544559:0;docker compose build cron
+: 1700581552:0;make init_dev
+: 1700632757:0;php bin/console elasticsearch:index:create --env=dev -n
+: 1700632765:0;php bin/console elasticsearch:index:fill --env=dev -n
+: 1700735571:0;git pu
+: 1700904554:0;composer create-project --prefer-dist yiisoft/yii2-app-basic yii2-test
+: 1701258941:0;git his
+: 1701262704:0;sudo apt install autoconf automake pkg-config libgtk-3-dev
+: 1701262904:0;sudo apt install arc-theme
+: 1701263776:0;make mkxpi
+: 1701693861:0;git puis
+: 1701780970:0;sudo apt install font-manager
+: 1702020774:0;yarn
+: 1702361983:0;sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-utils
+: 1702362597:0;sudo apt install virtualbox-dkms
+: 1702362703:0;sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils
+: 1702364318:0;php bin/console app:users:create-admin
+: 1702379660:0;git submodule update
+: 1702556484:0;php bin/console content_nodes:reorder
+: 1702562613:0;yarn cache clean
+: 1702567156:0;sudo apt install alsa-ucm-conf firmware-sof-signed python3-update-manager update-manager update-manager-core
+: 1702568099:0;sudo apt install fonts-noto-color-emoji
+: 1702965154:0;sudo apt install gnome-sound-recorder
+: 1702965843:0;sudo apt install audio-recorder
+: 1703004275:0;make cpin
+: 1703059837:0;git reset .idea
+: 1703331822:0;sudo apt install gnome-games
+: 1703427980:0;make stan
+: 1703428296:0;make phpunit
+: 1703787214:0;git t
+: 1704953815:0;sudo apt install libvirt-clients libvirt-daemon libvirt-daemon-config-network libvirt-daemon-config-nwfilter libvirt-daemon-driver-qemu libvirt-daemon-system libvirt-daemon-system-systemd libvirt0 osinfo-db python3-update-manager update-manager
+: 1705046446:0;git de
+: 1705392389:0;yarn intall
+: 1705392402:0;yarn bui
+: 1705473320:0;sudo apt install systemd-hwe-hwdb tzdata virtualbox-dkms
+: 1705678699:0;sudo apt install cinnamon-desktop-environment
+: 1705990304:0;sudo apt install libnss-mymachines libnss-resolve libnss-systemd libpam-systemd libsystemd0 libsystemd0:i386 libudev1 libudev1:i386 systemd systemd-container systemd-oomd systemd-sysv systemd-timesyncd udev
+: 1706016550:0;git cd ../redmine_kanban
+: 1706606604:0;sudo apt install sublime-merge
+: 1706858095:0;sudo apt install alsa-ucm-conf
+: 1707482238:0;sudo apt install apt-transport-https audacious build-essential ca-certificates checkinstall cheese conky curl doublecmd-gtk fbreader filezilla flameshot gimp git gnupg-agent guake htop lsb-release mc mednaffe neofetch openjdk-8-jdk php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-intl php7.4-imap php7.4-imagick php8.0 php8.0-mysql php8.0-sqlite3 php8.0-curl php8.0-cgi php8.0-gd php8.0-zip php8.0-mbstring php8.0-xml php8.0-xmlrpc php8.0-common php8.0-intl php8.0-imap php8.0-imagick php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-intl php8.1-imap php8.1-imagick p7zip python3-apport python3-problem-report quadrapassel qbittorrent software-properties-common sqlite3 sublime-text tree unzip vagrant virtualbox vlc wget wkhtmltopdf xvfb zsh
+: 1707482419:0;sudo apt install software-properties-common
+: 1707482473:0;sudo apt install apt-transport-https audacious build-essential ca-certificates checkinstall cheese conky curl doublecmd-gtk fbreader filezilla flameshot gimp git gnupg-agent guake htop lsb-release mc mednaffe neofetch openjdk-8-jdk php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-intl php7.4-imap php7.4-imagick php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-intl php8.1-imap php8.1-imagick p7zip python3-apport python3-problem-report quadrapassel qbittorrent software-properties-common sqlite3 sublime-text tree unzip vagrant virtualbox vlc wget wkhtmltopdf xvfb zsh
+: 1707482802:0;sudo add-apt-repository ppa:atareao/telegram -y
+: 1707482830:0;sudo apt install telegram-desktop
+: 1707485049:0;sudo apt update && sudo apt upgrade
+: 1707485058:0;sudo apt install ca-certificates curl gnupg lsb-release dirmngr software-properties-common apt-transport-https
+: 1707488277:0;sudo apt install software-properties-common apt-transport-https wget ca-certificates gnupg2
+: 1707492746:0;sudo apt install curl git unzip
+: 1707506374:0;composer req webapp
+: 1708075253:0;sudo apt install language-pack-en language-pack-en-base language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru language-pack-gnome-ru-base language-pack-ru language-pack-ru-base libegl-mesa0 libegl-mesa0:i386 libgbm1 libgbm1:i386
+: 1708598809:0;git histt
+: 1709016485:0;php bin/console | grep export
+: 1709016498:0;php bin/console app:core:export
+: 1709016558:0;php bin/console cib:im:prod
+: 1709209777:0;sudo apt install php7.4-soap
+: 1709988397:0;make check_syntax
+: 1709988573:0;make check_tests
+: 1709999628:0;make bash
+: 1710222191:0;yarn delete vue-route
+: 1710236809:0;git fet
+: 1710322851:0;sudo apt install openjdk-11-jdk
+: 1710326620:0;sudo dpkg --help
+: 1710326655:0;sudo dpkg -r apache-netbeans
+: 1710486410:0;sudo apt install docky
+: 1710488168:0;sudo apt install libldap-2.5-0 libnvpair3linux libuutil3linux libzfs4linux libzpool5linux zfs-initramfs zfs-zed zfsutils-linux
+: 1710655491:0;make tests
+: 1710656425:0;php bin/console fixt
+: 1710656750:0;sudo apt install php8.2 php8.2-intl
+: 1710766234:0;git fe
+: 1710829293:0;lspci | grep -E "VGA|3D"
+: 1710855734:0;php bin/console fix
+: 1710855745:0;php bin/console hautelook:fixtures:load
+: 1710856395:0;make unit
+: 1711473936:0;yarn watch
+: 1711608614:0;sudo apt install coreutils libpulse-mainloop-glib0 libpulse0 libpulse0:i386 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
+: 1711610909:0;yarn и
+: 1712668629:0;yarn watch_v2
+: 1712753475:0;php bin/console ckeditor:install --help
+: 1714118907:0;sudo apt install libruby3.0 ruby3.0
+: 1714122610:0;sudo dpkg --configure -a
+: 1714637972:0;git logs
+: 1715059953:0;sudo apt install krita
+: 1715060615:0;sudo apt install pinta
+: 1715065244:0;docker compose ps
+: 1715956899:0;docker compose
+: 1716370470:0;sudo apt install php5.6 php5.6-mysql php5.6-sqlite3 php5.6-curl php5.6-json php5.6-cgi php5.6-gd php5.6-zip php5.6-mbstring php5.6-xml php5.6-xmlrpc php5.6-common
+: 1716371515:0;sudo apt install lintian
+: 1716558057:0;code /demo
+: 1716880952:0;npm -g i yarn
+: 1716881826:0;php bin/console doctrine:fixtures:load
+: 1716881874:0;php bin/console server:run
+: 1716973317:0;composer require symfony/filesystem
+: 1716973482:0;composer move symfony/filesystem
+: 1716973488:0;composer remove symfony/filesystem
+: 1716994792:0;php bin/console app:core:export-cibsite-api-data
+: 1717059218:0;docker run hello-world
+: 1717145783:0;composer --version
+: 1717148056:0;git fetc
+: 1717156937:0;yarn yarn-build.sh
+: 1717310248:0;sudo apt install php8.2-pgsql
+: 1717325547:0;sudo apt install curl ca-certificates gnupg
+: 1717325568:0;sudo apt install pgadmin4
+: 1717325602:0;sudo apt install python3.8
+: 1717340751:0;php bin/console api:doc:dump
+: 1717340776:0;php bin/console nelmio:apidoc:dump
+: 1717493814:0;docker composer ps
+: 1717497311:0;sudo apt install zswap
+: 1718088416:0;php bin/console cib:data:move_request_form_stat_log_to_archive
+: 1718272143:0;php bin/console elast
+: 1718272155:0;php bin/console elasticsearch:scheduler
+: 1718460195:0;sudo apt install sublime-text
+: 1719224616:0;php bin/console make:command
+: 1719225981:0;php bin/console make
+: 1719227474:0;php bin/console work-time-schedule:range
+: 1719308955:0;git fetcj
+: 1719308971:0;git pul origin feature-25596
+: 1719393730:0;docker system prune -af --volumes
+: 1720014031:0;git composer req cinet/helpers
+: 1720878915:0;make build
+: 1720896321:0;make run
+: 1720897631:0;sudo apt install cmake
+: 1720899734:0;make MyApp
+: 1722439465:0;git hotfix-card
+: 1722499191:0;make testAOB
+: 1722610846:0;php bin/console doctrine:
+: 1722610858:0;php bin/console doctrine:migrations:sync-metadata-storage
+: 1722610908:0;php bin/console doctrine:cache:clear
+: 1722610946:0;php bin/console doctrine:cache:clear-metadata
+: 1722610954:0;php bin/console doctrine:cache:clear-query
+: 1722610960:0;php bin/console doctrine:cache:clear-result
+: 1722610962:0;php bin/console doctrine:cache:clear-coll
+: 1722611109:0;php bin/console doctrine:schema:update --force
+: 1722861734:0;sudo apt install jq
+: 1722957050:0;make check
+: 1723179624:0;npm remove green-tunnel
+: 1723179645:0;yarn -v
+: 1723192065:0;php bin/console suggestion_plugin:notify_inspectors
+: 1723463388:0;make test
+: 1723539264:0;php bin/console office_plugin:create_last_pay
+: 1723628568:0;yarn commitlint.config.cjs
+: 1725002786:0;yarn buildOA
+: 1725003450:0;sudo apt install libicu-dev
+: 1725449345:0;sudo apt install -y wkhtmltopdf
+: 1726566712:0;git cop master
+: 1726764969:0;find / -name "*phpstorm*"
+: 1726813255:0;sudo apt install libmm-glib0 libpcap0.8 modemmanager
+: 1727855838:0;sudo add-apt-repository ppa:neovim-ppa/stable
+: 1727855853:0;sudo apt install neovim
+: 1727870886:0;sudo apt install exuberant-ctags
+: 1727950475:0;sudo apt install build-essential cmake vim-nox python3-dev
+: 1727951157:0;sudo apt install tmux
+: 1727952150:0;nvim .phpcd.vim
+: 1728027829:0;php bin/console plugin_newsfeed:fix_strip_content
+: 1728193544:0;sudo apt install lua
+: 1728193631:0;sudo apt install lua5.4
+: 1728235207:0;npm install -g emmet-ls
+: 1728851999:0;sudo apt install snapd
+: 1728852112:0;sudo add-apt-repository ppa:snappy-dev/snapd
+: 1728855576:0;sudo apt install default-jre
+: 1728890418:0;sudo apt install xcb
+: 1728890475:0;sudo apt install libxkbcommon-x11-dev
+: 1728890595:0;sudo apt install libxcb-cursor0
+: 1729104450:0;docker rm 0fa499159ee0
+: 1729104782:0;docker down personal-database-1 --remove-orphans
+: 1729679372:0;sudo apt install php7.4-intl
+: 1730051072:0;sudo apt install remmina
+: 1730276799:0;docker ps -a --filter "label=com.docker.compose.project=job-quest-backend"
+: 1730281414:0;php bin/console do:da:dr --force
+: 1730473615:0;composer global require phpactor/phpactor:0.17.*
+: 1730537603:0;git sty
+: 1730547940:0;sudo add-apt-repository ppa:lazygit-team/release
+: 1730567188:0;git stash list
+: 1730784247:0;sudo apt install fish
+: 1730801422:0;php bin/console internal_rest_api:sms_service:add_sender_system
+: 1730966364:0;sudo apt install klavaro
+: 1731138511:0;sudo add-apt-repository ppa:aslatter/ppa
+: 1731138624:0;sudo apt install alacritty
+: 1731138664:0;sudo apt install lintian
+: 1731181610:0;sudo apt install kitty
+: 1731396766:0;sudo apt install python3.10-venv
+: 1731509726:0;sudo apt install apt-transport-https build-essential ca-certificates checkinstall curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk p7zip python3-apport python3-problem-report software-properties-common sqlite3 tree unzip vagrant virtualbox wget wkhtmltopdf xvfb
+: 1731509731:0;sudo apt install apt-transport-https build-essential ca-certificates checkinstall curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk p7zip python3-apport python3-problem-report software-properties-common sqlite3 tree unzip virtualbox wget wkhtmltopdf xvfb
+: 1731509938:0;sudo apt install software-properties-common python-software-properties
+: 1731509966:0;sudo add-apt-repository ppa:neovim-ppa/unstable
+: 1731510064:0;sudo apt install python3.10-venv neovim klavaro remmina
+: 1731510488:0;sudo apt install php8.3 php8.3-mysql php8.3-sqlite3 php8.3-curl php8.3-cgi php8.3-gd php8.3-zip php8.3-mbstring php8.3-xml php8.3-xmlrpc php8.3-common
+: 1731510764:0;sudo apt install php8.2
+: 1731510805:0;sudo apt install php8.2 php8.2-mysql php8.2-sqlite3 php8.2-curl php8.2-cgi php8.2-gd php8.2-zip php8.2-mbstring php8.2-xml php8.2-xmlrpc php8.2-common
+: 1731510887:0;sudo apt install php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-soap php7.4-mailparse php7.4-intl php7.4-imagick
+: 1731512360:0;sudo apt install vlc
+: 1731512751:0;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+: 1731513608:0;sudo apt install ubuntu-advantage-tools chrome-gnome-shell
+: 1731514544:0;sudo apt install ubuntu-advantage-tools
+: 1731514662:0;sudo apt install python3-distupgrade shotwell shotwell-common ubuntu-release-upgrader-core ubuntu-release-upgrader-gtk
+: 1731523577:0;composer
+: 1731593231:0;sudo apt install php7.4-imap
+: 1731594355:0;sudo apt install firefox
+: 1731606302:0;php bin/console
+: 1731606435:0;php bin/console cib:data:points_data_save
+: 1731660038:0;sudo apt install fuse libfuse2
+: 1731686153:0;sudo apt install nautilus
+: 1731769353:0;sudo apt install nvidia-535
+: 1731769365:0;sudo apt install nvidia-driver-535
+: 1731769649:0;sudo apt install xserver-xorg-video-nouveau
+: 1731771204:0;sudo apt install nvidia-driver-550
+: 1731771299:0;sudo apt install gir1.2-mutter-14
+: 1731771339:0;sudo apt install ldap-utils libldap-common libldap2
+: 1731791920:0;sudo add-apt-repository ppa:nm-l2tp/network-manager-l2tp
+: 1731792673:0;sudo apt install -y apt-transport-https ca-certificates curl gnupg
+: 1731792713:0;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+: 1731792840:0;sudo apt install -f
+: 1731794402:0;sudo apt install libxcb-xinerama0 libxcb-cursor0
+: 1731795155:0;sudo add-apt-repository ppa:ondrej/php
+: 1731795205:0;sudo apt install nvim
+: 1731795211:0;sudo apt install neovim klavaro remmina
+: 1731795259:0;sudo apt install neovim filezilla
+: 1731795356:0;sudo apt install php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-soap php7.4-mailparse php7.4-intl php7.4-imagick php7.4-imap
+: 1731795466:0;sudo apt install php8.2 php8.2-mysql php8.2-sqlite3 php8.2-curl php8.2-cgi php8.2-gd php8.2-zip php8.2-mbstring php8.2-xml php8.2-xmlrpc php8.2-common php8.2-imap
+: 1731795595:0;sudo apt install php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-imap
+: 1731795696:0;sudo apt install php8.3 php8.3-mysql php8.3-sqlite3 php8.3-curl php8.3-cgi php8.3-gd php8.3-zip php8.3-mbstring php8.3-xml php8.3-xmlrpc php8.3-common php8.3-imap
+: 1731831380:0;sudo apt install plank
+: 1731862211:0;sudo apt install lazygal
+: 1731862213:0;sudo apt install lazygit
+: 1731863307:0;sudo apt install -y lua5.3 lua5.3-dev build-essential unzip
+: 1731863336:0;sudo apt install -y lua5.3 build-essential unzip
+: 1731864424:0;sudo apt install python3.12-venv
+: 1731930802:0;lsof -i :4444
+: 1732128965:0;sudo apt install sublime-text sublime-merge
+: 1732130124:0;npm list -g --depth=0
+: 1732130139:0;npm bin -g
+: 1732130181:0;npm root -g
+: 1732132150:0;lsmod | grep zswap
+: 1732132274:0;sudo apt install zram-tools
+: 1732218567:0;git diff
+: 1732476550:0;git mc
+: 1732509125:0;sudo apt install conky
+: 1732509142:0;sudo apt install conky-all
+: 1732526674:0;git lo
+: 1732622302:0;yarn bbuild
+: 1732698433:0;sudo apt install ruby-full
+: 1732886684:0;yarn use 16
+: 1732886735:0;yarn install && yarn run --silent build
+: 1733127344:0;sudo apt install php-xdebug
+: 1733127352:0;sudo apt install php7.4-xdebug
+: 1733155415:0;php bin/console do:schema:val --skip-sync --env=test
+: 1733395562:0;sudo apt install python3-pip
+: 1733395615:0;sudo apt install python3-full
+: 1733395836:0;sudo apt install pipx
+: 1733903712:0;git histy
+: 1734092346:0;php bin/console elasticsearch:index:delete
+: 1734690152:0;sudo apt install php8.1-intl
+: 1734704681:0;docker compose logs -f
+: 1736328599:0;sudo apt install firmware-sof-signed libpulse-mainloop-glib0 libpulse0 libpulse0:i386 pulseaudio-utils
+: 1736754652:0;sudo apt install kazam
+: 1736833287:0;sudo apt install -y build-essential libmysqlclient-dev
+: 1737465697:0;php bin/console sms_plugin:add_sender_system
+: 1737465770:0;php bin/console sms_plugin:process_messages
+: 1738139269:0;sudo apt updater
+: 1738140185:0;sudo apt install attr kmod libattr1 libcap2:i386 libcap2 libcap2-bin libdebuginfod-common libdebuginfod1t64 libdrm-amdgpu1 libdrm-amdgpu1:i386 libdrm-common libdrm-intel1 libdrm-intel1:i386 libdrm-nouveau2
+: 1738242379:0;php bin/console doctrine:migrations:status
+: 1738505674:0;npm test
+: 1738601056:0;npm run compile
+: 1738914740:0;git cp -- .
+: 1738914758:0;yarn instal
+: 1738936734:0;yarn instll
+: 1739297144:0;php bin/console doctrine:migrations:generate
+: 1739781145:0;php bin/console elasticsearch
+: 1739784183:0;sudo apt install mysql-workbench -y
+: 1739786651:0;php bin/console cibsite:elasticsearch:delete-index
+: 1739786654:0;php bin/console cibsite:elasticsearch:create-index
+: 1739786660:0;php bin/console cibsite:elasticsearch:fill-index
+: 1739815811:0;git st5
+: 1740039284:0;bundle add sorbet --dev
+: 1740039653:0;sudo apt install watchman
+: 1740142478:0;php bin/console debug:config nelmio_cors
+: 1740547433:0;docker mc-tg-bot-cs-web-1 down
+: 1740718013:0;docker kill 7354e9f4d58e
+: 1741786517:0;yarn dev
+: 1741851536:0;docker cp redmine_docker4developer-db-1:/etc/my.cfg my.cfg
+: 1741953366:0;sudo apt install php8.4 php8.4-mysql php8.4-sqlite3 php8.4-curl php8.4-cgi php8.4-gd php8.4-zip php8.4-mbstring php8.4-xml php8.4-xmlrpc php8.4-common php8.4-imap php8.4-intl php8.4-bcmath php8.4-pgsql
+: 1742471186:0;php bin/console server
+: 1742649547:0;sudo apt install gparted
+: 1745942576:0;php bin/console feedback:registry:creditvacation
+: 1747039808:0;composer init
+: 1747124976:0;docker compose up --build -d
+: 1749970564:0;composer install
+: 1749971316:0;php bin/console make:entity
+: 1749971847:0;php bin/console make:migration
+: 1750317111:0;bundle config set --local path 'vendor/bundle'
+: 1750317169:0;sudo apt install libyaml-dev build-essential
+: 1750423385:0;docker rs
+: 1750687124:0;sudo apt install curl gnupg2 build-essential libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev nodejs yarn git
+: 1750837342:0;sudo apt install bluetooth bluez bluez-cups bluez-obexd libasound2-data libasound2t64 libasound2t64:i386 libatopology2t64 libbluetooth3
+: 1750926414:0;sudo apt install php5.6 php5.6-mysql php5.6-sqlite3 php5.6-curl php5.6-json php5.6-cgi php5.6-gd php5.6-zip php5.6-mbstring php5.6-xml php5.6-xmlrpc php5.6-common php5.6-soap php5.6-mailparse php5.6-intl php5.6-imagick php5.6-imap
+: 1751988212:0;php bin/console sms:add
+: 1751989010:0;php bin/console sms:pro
+: 1752485808:0;sudo apt install fd-find
+: 1752488229:0;node -v
+: 1752489743:0;sudo apt install luarocks
+: 1752566897:0;sudo apt install jsregexp
+: 1752898964:0;sudo apt autoremove
+: 1752898993:0;sudo apt install
+: 1752898996:0;sudo apt install linux-modules-nvidia-550-generic
+: 1752899757:0;sudo apt install --reinstall nvidia-driver-550
+: 1752900131:0;sudo apt install nvidia-driver-570-open
+: 1752922884:0;git host
+: 1753432227:0;sudo apt install neovim
+: 1753790573:0;sudo apt update && sudo apt install --only-upgrade openjdk-17-jdk dbeaver-ce
+: 1753790679:0;sudo add-apt-repository ppa:openjdk-r/ppa
+: 1753790989:0;sudo apt update && sudo apt install --only-upgrade dbeaver-ce
+: 1753794274:0;sudo apt install xfreerdp
+: 1754474201:0;sudo apt install language-pack-en
+: 1754474282:0;sudo apt install language-pack-gnome-ru language-pack-gnome-ru-base libgtk-4-1 libgtk-4-common python-apt-common python3-apt
+: 1754662226:0;git
+: 1755173513:0;sudo apt install --reinstall libgtk-3-0 libwebkit2gtk-4.0-37 libswt-gtk-4-jni
+: 1755174084:0;sudo apt install --reinstall libglib2.0-0 libgobject-2.0-0
+: 1755174359:0;sudo apt install --reinstall libgtk-3-0 libgdk-pixbuf2.0-0
+: 1755260592:0;docker compose d
+: 1756276325:0;sudo apt install traceroute
+: 1757077436:0;docker compose гз -в
+: 1757931732:0;git rebase -i HEAD~3
+: 1759218900:0;php bin/console app:test
+: 1759765190:0;git ad .
+: 1759905950:0;php bin/console doctrine:schema
+: 1760528209:0;git fethc
+: 1762327616:0;git sdt
+: 1762429156:0;docker
+: 1762841984:0;php bin/console cib:test
+: 1763038204:0;sudo apt install neovim -y
+: 1763376514:0;vim
+: 1763719413:0;sudo apt install u rar
+: 1763719416:0;sudo apt install urar
+: 1763719421:0;sudo apt install rar
+: 1763999487:0;sudo apt install python3-sqlparse
+: 1764074327:0;sudo apt install python3-requests-html
+: 1764074332:0;sudo apt install python-requests-html
+: 1764074398:0;sudo apt install python3-bs4
+: 1764080789:0;sudo apt install rustdesk
+: 1764156587:0;git fecth
+: 1764228460:0;sudo apt install guake
+: 1764741378:0;sudo apt install libinput-bin libinput10
+: 1765955336:0;sudo apt install openjdk-17-jdk
+: 1766041098:0;sudo apt install bsdextrautils bsdutils eject fdisk gnome-settings-daemon-common gstreamer1.0-pipewire libblkid1 libblkid1:i386 libfdisk1 libmbim-glib4 libmbim-proxy libmount1 libmount1:i386 libpipewire-0.3-0t64 libpipewire-0.3-modules
+: 1766474745:0;docker sp
+: 1766477006:0;npm init
+: 1766483343:0;npm link
+: 1766484104:0;npx
+: 1766488776:0;npx tsc --init
+: 1766489152:0;npx ts-jest config:init
+: 1766644570:0;sudo apt install sublime-text
+: 1766647959:0;sudo apt install libgmp3-dev build-essential libssl-dev
+: 1766647967:0;sudo apt install python3-virtualenv python3-dev libpq-dev
+: 1766648042:0;sudo apt install pgadmin4
+: 1768201994:0;sudo add-apt-repository ppa:longsleep/golang-backports
+: 1768202336:0;sudo apt install golang-go
+: 1768223061:0;sudo apt install php8.5 php8.5-mysql php8.5-sqlite3 php8.5-curl php8.5-cgi php8.5-gd php8.5-zip php8.5-mbstring php8.5-xml php8.5-xmlrpc php8.5-common php8.5-imap php8.5-intl php8.5-bcmath php8.5-pgsql
+: 1768284659:0;sudo apt install zathura
+: 1768486979:0;php bin/console assets:install --symlink
+: 1768915572:0;php bin/console list -l
+: 1768923021:0;git ast
+: 1769601858:0;php bin/console doctrine:migrations:diff
+: 1770307821:0;sudo dpkg --purge dbeaver
+: 1770447120:0;sudo apt install alsa-ucm-conf language-pack-gnome-en-base language-pack-gnome-ru
+: 1770469729:0;git bt
+: 1770469731:0;git by
+: 1771257333:0;sudo apt install libgtk-3-bin
+: 1771341295:0;php bin/console t:t
+: 1771401822:0;php bin/console rep:pre
+: 1771416823:0;php bin/console doctrine:migrations:migrate
+: 1771478713:0;sudo apt install libfprint-2-2 libfprint-2-tod1
+: 1772610622:0;sudo apt install ca-certificates curl apt-transport-https software-properties-common
+: 1772611411:0;sudo apt install network-manager-l2tp  network-manager-l2tp-gnome
+: 1772611877:0;sudo apt install libxcb-icccm4 libxcb-keysyms1 libopengl0 libxcb-cursor0 libxcb-xinerama0 libxkbcommon-x11-0
+: 1772611920:0;sudo apt install libopengl0
+: 1772611924:0;sudo apt install libxcb-icccm4 libxcb-keysyms1 libopengl0 libxcb-cursor0 libxcb-xinerama0
+: 1772611934:0;sudo apt install libglx-mesa0
+: 1772615044:0;sudo apt install gnome-tweak-tool
+: 1772615050:0;sudo apt install gnome-tweaks
+: 1772615598:0;source ~/.zshrc
+: 1772616959:0;sudo apt install evolution
+: 1772686393:0;sudo apt install network-manager-openvpn network-manager-openvpn-gnome
+: 1772686445:0;sudo apt install thunderbird thunderbird-gnome-support thunderbird-locale-ru
+: 1773148104:0;sudo add-apt-repository ppa:libreoffice/ppa
+: 1773148116:0;sudo apt install libreoffice
+: 1773151180:0;php bin/console adm
+: 1773151196:0;php bin/console cib:admin:create
+: 1773220538:0;sudo apt install gir1.2-nm-1.0 libnftables1 libnm0 libnm0:i386 network-manager network-manager-config-connectivity-ubuntu nftables
+: 1773229422:0;pwd
+: 1773311489:0;php bin/console ai:index
+: 1773387876:0;php bin/console do:mi:di
+: 1773388456:0;php bin/console do:migrations:execute --up 'Application\Migrations\Version20260313074439'
+: 1774016556:0;sudo apt install wezterm
+: 1774259281:0;git commit --amend -m "fix: call details"
+: 1774264770:0;sudo apt install neovim -y
+: 1774264786:0;sudo apt install --fix-broken
+: 1774265244:0;sudo apt install xclip
+: 1774265254:0;sudo apt install ripgrep
+: 1774266416:0;p10k configure
+: 1774351717:0;sudo apt install php7.4-mailparse
+: 1774438010:0;yarn build
+: 1774448440:0;sudo apt install -y curl gpg
+: 1774450416:0;sudo apt install freerdp2-x11
+: 1774497125:0;sudo apt install antigravity
+: 1774597975:0;sudo apt install libreoffice-help-ru libreoffice-l10n-ru
+: 1774845037:0;sudo apt install rhythmbox
+: 1774946527:0;git init
+: 1774956984:0;docker os
+: 1775138731:0;git show HEAD~3:src/Manager/Supervisor/v2/Statistic/CallbacksManager.php | grep -A 20 "search("
+: 1775189956:0;sudo apt install rbenv
+: 1775190273:0;sudo apt install ruby-dev build-essential
+: 1775206283:0;sudo apt install transmission
+: 1775234729:0;composer run phpstan
+: 1775640418:0;git rv
+: 1776068926:0;sudo apt install --fix-broken
+: 1776068969:0;sudo apt install wine wine-core winehq-stable winehq-devel winehq-staging
+: 1776069154:0;sudo dpkg --add-architecture i386
+: 1776069200:0;sudo apt install --fix-broken
+: 1776069205:0;sudo apt install wine wine-core winehq-stable winehq-devel winehq-staging
+: 1776069222:0;sudo apt install wine winehq-stable winehq-devel winehq-staging
+: 1776074468:0;sudo dpkg --remove-architecture i386
+: 1776238929:0;sudo apt install gir1.2-nm-1.0 libnm0 libnm0:i386 network-manager network-manager-config-connectivity-ubuntu
+: 1776272627:0;sudo apt install kazam
+: 1776431178:0;make lint
+: 1777092240:0;sudo apt install netplan-generator python3-netplan
+: 1777291260:0;git tags
+: 1777291264:0;git tag
+: 1777383199:0;git  master
+: 1777447304:0;sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf ninja-build git meson sassc
+: 1777463693:0;sudo apt install php7.4-soap
+: 1777471919:0;npm -v
+: 1777531712:0;sudo apt install virtualbox
+: 1777548361:0;git hotfix-31741
+: 1778044117:0;sudo apt install linux-signatures-nvidia-6.8.0-110-generic
+: 1778044158:0;sudo apt install --fix-broken
+: 1778650426:0;make web-lint
+: 1778662614:0;git switch master
+: 1778698010:0;sudo apt install golang
+: 1778698239:0;sudo apt install golang
+: 1778757685:0;make migrate

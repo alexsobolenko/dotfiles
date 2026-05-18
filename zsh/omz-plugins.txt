@@ -1,0 +1,4 @@
+# target inside $OMZ/custom                                  repository
+themes/powerlevel10k                                        https://github.com/romkatv/powerlevel10k.git
+plugins/zsh-autosuggestions                                https://github.com/zsh-users/zsh-autosuggestions.git
+plugins/zsh-syntax-highlighting                            https://github.com/zsh-users/zsh-syntax-highlighting.git
