@@ -175,5 +175,5 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.enableStickyScroll": false,
     "docker.extension.enableComposeLanguageServer": false,
-    "workbench.colorTheme": "Sonomin"
+    "workbench.colorTheme": "Monokai"
 }

@@ -62,8 +62,8 @@ zstyle ':omz:update' frequency 10
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# plugins
-plugins=(git zsh-syntax-highlighting colorize zsh-autosuggestions colored-man-pages)
+# zsh-syntax-highlighting must be the last plugin because it wraps ZLE widgets.
+plugins=(git colorize zsh-autosuggestions colored-man-pages zsh-syntax-highlighting)
 
 # omz source
 source $ZSH/oh-my-zsh.sh
@@ -87,6 +87,11 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export GOPATH="$HOME/.local/share/go"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
