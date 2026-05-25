@@ -33,13 +33,7 @@ require("config.mappings")
 
 require("lazy").setup({
     spec = {
-        { import = "plugins/code" },
-        { import = "plugins/editor" },
-        { import = "plugins/git" },
-        { import = "plugins/lang/php" },
-        { import = "plugins/theme" },
-        { import = "plugins/tools" },
-        { import = "plugins/ui" },
+        { import = "plugins" },
   	},
     defaults = {
         lazy = false,
