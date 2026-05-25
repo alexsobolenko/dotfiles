@@ -62,7 +62,6 @@ run() {
 require_commands() {
   local missing=0
 
-  # These commands are required by the configs or by this installer.
   for command in code curl git nvim wezterm zsh; do
     if ! command -v "$command" >/dev/null 2>&1; then
       echo "Missing required command: $command" >&2
@@ -70,8 +69,6 @@ require_commands() {
     fi
   done
 
-  # nvm is sourced by zsh/.zshrc and is usually installed as shell scripts,
-  # not as a standalone executable.
   if [[ ! -s "$HOME/.nvm/nvm.sh" ]]; then
     echo "Missing required file: $HOME/.nvm/nvm.sh" >&2
     missing=1
@@ -90,8 +87,6 @@ install_oh_my_zsh() {
 
   log "install: Oh My Zsh -> $omz_dir"
 
-  # The official installer expects the destination in the ZSH environment
-  # variable. The public variable for this script is OMZ.
   if ((dry_run)); then
     printf 'dry-run:'
     printf ' %q' \
@@ -125,7 +120,6 @@ install_omz_plugins() {
 
   run mkdir -p "$omz_custom_dir"
 
-  # Each line: relative target inside $OMZ/custom, then git repository URL.
   while read -r target repo _; do
     if [[ -z "${target:-}" || "$target" == \#* ]]; then
       continue
@@ -152,7 +146,6 @@ link_path() {
     exit 1
   fi
 
-  # Parent directories are created before linking application config paths.
   run mkdir -p "$(dirname "$target")"
 
   if [[ -L "$target" && "$(readlink "$target")" == "$source" ]]; then
@@ -160,8 +153,6 @@ link_path() {
     return 0
   fi
 
-  # This is a personal installer: existing app-created config paths are removed
-  # and replaced with symlinks to this repository.
   if [[ -e "$target" || -L "$target" ]]; then
     log "remove: $target"
     run rm -rf "$target"
@@ -218,7 +209,6 @@ install_zsh_history_template() {
     return 0
   fi
 
-  # Shell history is personal state, so it is seeded only on a fresh machine.
   if [[ -e "$target" ]]; then
     log "skip: $target already exists"
     return 0
@@ -245,8 +235,6 @@ install_vscode_extensions() {
       continue
     fi
 
-    # --force avoids interactive install prompts. VS Code can still ask to
-    # trust a publisher later inside the UI.
     run code --install-extension "$extension" --force
   done < "$extensions_file"
 }

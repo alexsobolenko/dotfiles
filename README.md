@@ -41,6 +41,26 @@ not tracked.
 Zsh config aliases `ls` to `colorls`. `colorls` requires Ruby/gem installation;
 an alternative without Ruby has not been selected yet.
 
+## GIT
+
+1. ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+2. Create `~/.gitconfig.local` with local user settings:
+
+```ini
+[user]
+    name = Your Name
+    email = your.email@example.com
+```
+
+## ZSH
+
+1. Install `zsh`
+2. Install `oh-my-zsh`
+3. ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+4. Install Oh My Zsh custom plugins from `zsh/omz-plugins.txt`
+5. ln -s ~/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
+6. cp ~/dotfiles/zsh/.zsh_history.template ~/.zsh_history
+
 ## VISUAL STUDIO CODE
 
 1. ln -s ~/dotfiles/vscode ~/.config/Code/User
@@ -51,27 +71,12 @@ an alternative without Ruby has not been selected yet.
 
 ## NEOVIM
 
-### Installation
-
 1. ln -s ~/dotfiles/nvim ~/.config/nvim
 2. Install `neovim` (ver >= 0.10)
-3. Install `composer`
-4. Install `nodejs`
-5. Install following npm packages globally:
-    - `@volar/server`
-    - `@vue/language-server`
+3. Install `nodejs`
+4. Install following npm packages globally:
     - `dockerfile-language-server-nodejs`
-    - `intelephense`
     - `tree-sitter-cli`
-    - `twiggy-language-server`
-    - `typescript-language-server`
-    - `typescript`
-    - `vls`
-    - `vscode-langservers-extracted`
     - `yaml-language-server`
-6. Install `ripgrep` to use `telescope` plugin
-7. Install `xclip` (or another clipboard utility) to use OS clipboard
-
-### Configuration
-
-* __Theme__ - create file `~/.config/nvim/.theme` with theme name. Use filenames from dir `lua/plugins/theme` (default - `monokai`)
+5. Install `ripgrep` to use `telescope` plugin
+6. Install `xclip` (or another clipboard utility) to use OS clipboard
