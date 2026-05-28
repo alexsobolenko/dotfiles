@@ -9,7 +9,7 @@ Run:
 ```
 
 The script checks required commands, installs Oh My Zsh dependencies and creates
-symlinks for Git, Zsh, Neovim, WezTerm and VS Code. Existing application config paths
+symlinks for Git, Zsh, Micro, WezTerm and VS Code. Existing application config paths
 are removed and replaced with symlinks. VS Code extensions are installed from
 `vscode/extensions.txt`.
 
@@ -43,8 +43,9 @@ an alternative without Ruby has not been selected yet.
 
 ## GIT
 
-1. ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
-2. Create `~/.gitconfig.local` with local user settings:
+1. Install `git`
+2. ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+3. Create `~/.gitconfig.local` with local user settings:
 
 ```ini
 [user]
@@ -61,22 +62,17 @@ an alternative without Ruby has not been selected yet.
 5. ln -s ~/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 6. cp ~/dotfiles/zsh/.zsh_history.template ~/.zsh_history
 
+## MICRO
+
+1. Install `micro`
+2. ln -s ~/dotfiles/micro ~/.config/micro
+
 ## VISUAL STUDIO CODE
 
-1. ln -s ~/dotfiles/vscode ~/.config/Code/User
+1. Install Visual Studio Code
+2. ln -s ~/dotfiles/vscode ~/.config/Code/User
 
 ## WEZTERM
 
-1. ln -s ~/dotfiles/wezterm ~/.config/wezterm
-
-## NEOVIM
-
-1. ln -s ~/dotfiles/nvim ~/.config/nvim
-2. Install `neovim` (ver >= 0.10)
-3. Install `nodejs`
-4. Install following npm packages globally:
-    - `dockerfile-language-server-nodejs`
-    - `tree-sitter-cli`
-    - `yaml-language-server`
-5. Install `ripgrep` to use `telescope` plugin
-6. Install `xclip` (or another clipboard utility) to use OS clipboard
+1. Install `wezterm`
+2. ln -s ~/dotfiles/wezterm ~/.config/wezterm

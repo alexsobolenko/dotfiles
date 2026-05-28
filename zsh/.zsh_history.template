@@ -346,12 +346,9 @@
 : 1726566712:0;git cop master
 : 1726764969:0;find / -name "*phpstorm*"
 : 1726813255:0;sudo apt install libmm-glib0 libpcap0.8 modemmanager
-: 1727855838:0;sudo add-apt-repository ppa:neovim-ppa/stable
-: 1727855853:0;sudo apt install neovim
 : 1727870886:0;sudo apt install exuberant-ctags
 : 1727950475:0;sudo apt install build-essential cmake vim-nox python3-dev
 : 1727951157:0;sudo apt install tmux
-: 1727952150:0;nvim .phpcd.vim
 : 1728027829:0;php bin/console plugin_newsfeed:fix_strip_content
 : 1728193544:0;sudo apt install lua
 : 1728193631:0;sudo apt install lua5.4
@@ -379,12 +376,10 @@
 : 1731138624:0;sudo apt install alacritty
 : 1731138664:0;sudo apt install lintian
 : 1731181610:0;sudo apt install kitty
-: 1731396766:0;sudo apt install python3.10-venv
 : 1731509726:0;sudo apt install apt-transport-https build-essential ca-certificates checkinstall curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk p7zip python3-apport python3-problem-report software-properties-common sqlite3 tree unzip vagrant virtualbox wget wkhtmltopdf xvfb
 : 1731509731:0;sudo apt install apt-transport-https build-essential ca-certificates checkinstall curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk p7zip python3-apport python3-problem-report software-properties-common sqlite3 tree unzip virtualbox wget wkhtmltopdf xvfb
 : 1731509938:0;sudo apt install software-properties-common python-software-properties
-: 1731509966:0;sudo add-apt-repository ppa:neovim-ppa/unstable
-: 1731510064:0;sudo apt install python3.10-venv neovim klavaro remmina
+: 1731510064:0;sudo apt install python3.10-venv klavaro remmina
 : 1731510488:0;sudo apt install php8.3 php8.3-mysql php8.3-sqlite3 php8.3-curl php8.3-cgi php8.3-gd php8.3-zip php8.3-mbstring php8.3-xml php8.3-xmlrpc php8.3-common
 : 1731510764:0;sudo apt install php8.2
 : 1731510805:0;sudo apt install php8.2 php8.2-mysql php8.2-sqlite3 php8.2-curl php8.2-cgi php8.2-gd php8.2-zip php8.2-mbstring php8.2-xml php8.2-xmlrpc php8.2-common
@@ -413,9 +408,6 @@
 : 1731792840:0;sudo apt install -f
 : 1731794402:0;sudo apt install libxcb-xinerama0 libxcb-cursor0
 : 1731795155:0;sudo add-apt-repository ppa:ondrej/php
-: 1731795205:0;sudo apt install nvim
-: 1731795211:0;sudo apt install neovim klavaro remmina
-: 1731795259:0;sudo apt install neovim filezilla
 : 1731795356:0;sudo apt install php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-soap php7.4-mailparse php7.4-intl php7.4-imagick php7.4-imap
 : 1731795466:0;sudo apt install php8.2 php8.2-mysql php8.2-sqlite3 php8.2-curl php8.2-cgi php8.2-gd php8.2-zip php8.2-mbstring php8.2-xml php8.2-xmlrpc php8.2-common php8.2-imap
 : 1731795595:0;sudo apt install php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-imap
@@ -506,7 +498,6 @@
 : 1752899757:0;sudo apt install --reinstall nvidia-driver-550
 : 1752900131:0;sudo apt install nvidia-driver-570-open
 : 1752922884:0;git host
-: 1753432227:0;sudo apt install neovim
 : 1753790573:0;sudo apt update && sudo apt install --only-upgrade openjdk-17-jdk dbeaver-ce
 : 1753790679:0;sudo add-apt-repository ppa:openjdk-r/ppa
 : 1753790989:0;sudo apt update && sudo apt install --only-upgrade dbeaver-ce
@@ -528,7 +519,6 @@
 : 1762327616:0;git sdt
 : 1762429156:0;docker
 : 1762841984:0;php bin/console cib:test
-: 1763038204:0;sudo apt install neovim -y
 : 1763376514:0;vim
 : 1763719413:0;sudo apt install u rar
 : 1763719416:0;sudo apt install urar
@@ -593,7 +583,6 @@
 : 1773388456:0;php bin/console do:migrations:execute --up 'Application\Migrations\Version20260313074439'
 : 1774016556:0;sudo apt install wezterm
 : 1774259281:0;git commit --amend -m "fix: call details"
-: 1774264770:0;sudo apt install neovim -y
 : 1774264786:0;sudo apt install --fix-broken
 : 1774265244:0;sudo apt install xclip
 : 1774265254:0;sudo apt install ripgrep

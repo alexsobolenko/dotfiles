@@ -99,7 +99,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 ZSH_COLORIZE_TOOL="pygmentize"
 
 # aliases
-alias zshconfig="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias zshconfig="micro ~/.zshrc"
+alias ohmyzsh="micro ~/.oh-my-zsh"
 alias ls="colorls"
 alias cat="pygmentize -O style=monokai -g"

@@ -62,7 +62,7 @@ run() {
 require_commands() {
   local missing=0
 
-  for command in code curl git nvim wezterm zsh; do
+  for command in code curl git micro wezterm zsh; do
     if ! command -v "$command" >/dev/null 2>&1; then
       echo "Missing required command: $command" >&2
       missing=1
@@ -166,7 +166,7 @@ install_links() {
   link_path "$dotfiles_dir/git/.gitconfig" "$HOME/.gitconfig"
   link_path "$dotfiles_dir/zsh/.zshrc" "$HOME/.zshrc"
   link_path "$dotfiles_dir/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
-  link_path "$dotfiles_dir/nvim" "$config_home/nvim"
+  link_path "$dotfiles_dir/micro" "$config_home/micro"
   link_path "$dotfiles_dir/wezterm" "$config_home/wezterm"
   link_path "$dotfiles_dir/vscode" "$vscode_user_dir"
 }
