@@ -168,6 +168,8 @@
     "window.dialogStyle": "custom",
     "window.menuBarVisibility": "toggle",
     "window.titleSeparator": "   -   ",
+
+    // -- workbench --
     "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "symbols",
     "workbench.layoutControl.enabled": false,

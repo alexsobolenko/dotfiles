@@ -61,16 +61,31 @@ an alternative without Ruby has not been selected yet.
 4. Install Oh My Zsh custom plugins from `zsh/omz-plugins.txt`
 5. ln -s ~/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 6. cp ~/dotfiles/zsh/.zsh_history.template ~/.zsh_history
+7. ln -s ~/dotfiles/zsh/.zsh_aliases ~/.zsh_aliases
+
+## BASH
+
+1. ln -s ~/dotfiles/bash/.bashrc ~/.bashrc
+2. cp ~/dotfiles/bash/.bash_history.template ~/.bash_history
+3. ln -s ~/dotfiles/bash/.bash_aliases ~/.bash_aliases
+4. ln -s ~/dotfiles/bash/.profile ~/.profile
 
 ## MICRO
 
 1. Install `micro`
 2. ln -s ~/dotfiles/micro ~/.config/micro
 
+## MIDNIGHT COMMANDER
+
+1. Install `mc`
+2. ln -s ~/dotfiles/mc/config ~/.config/mc
+3. ln -s ~/dotfiles/mc/.selected_editor ~/.selected_editor
+
 ## VISUAL STUDIO CODE
 
 1. Install Visual Studio Code
 2. ln -s ~/dotfiles/vscode ~/.config/Code/User
+3. Install extensions from file `vscode/extensions.txt`
 
 ## WEZTERM
 

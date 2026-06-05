@@ -1,0 +1,4 @@
+alias zshconfig="micro ~/.zshrc"
+alias ohmyzsh="micro ~/.oh-my-zsh"
+alias ls="colorls"
+alias cat="pygmentize -O style=monokai -g"

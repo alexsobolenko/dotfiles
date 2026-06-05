@@ -1,0 +1,431 @@
+sudo apt update
+sudo apt install guake
+sudo chmod +x conky.sh 
+./conky.sh 
+sudo apt install putty
+killall conky
+./scripts/conky.sh 
+sudo apt install ubuntu-restricted-extras libavcodec-extra libdvd-pkg adobe-flashplugin gnome-tweak-tool chrome-gnome-shell
+sudo apt install conky
+sudo apt install ьс
+sudo apt install mc
+mc
+sudo apt update
+sudo apt upgrade 
+sudo reboot
+cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/evdev.xml.back
+sudo cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/evdev.xml.back
+sudo gedit /usr/share/X11/xkb/rules/evdev.xml
+sudo apt install zsh
+sudo apt install curl
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+sudo apt install git
+chsh
+zsh
+cd bin/
+./phpstorm.sh
+sudo apt update
+sudo apt install yakuake
+sudo apt install git zsh neofetch
+cls
+clear
+neofetch 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ./.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt update
+sudo apt install ubuntu-restricted-extras libavcodec-extra libdvd-pkg guake git curl unzip 
+sudo apt install adobe-flashplugin gnome-tweak-tool chrome-gnome-shell
+sudo apt install adobe-flashplugin gnome-tweaks chrome-gnome-shell
+sudo apt install --
+sudo apt upgrade 
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+exit
+./install.sh 
+sudo apt install chrome-gnome-shell
+sudo apt-get install chrome-gnome-shell
+sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf
+sudo add-apt-repository ppa:ondrej/php
+sudo apt install apache2 php7.4 libapache2-mod-php7.4 php7.4-mysql
+sudo apt install apache2 php7.4 php7.4-mysql
+sudo apt install php-curl php-json php-cgi php-gd php-zip php-mbstring php-xml php-xmlrpc
+sudo apt install php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc
+sudo apt install apache2 php8.1 php8.1-mysql
+sudo apt install php8.1-curl php8.1-json php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc
+sudo apt install php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc
+sudo ufw allow in 80/tcp
+sudo systemctl status apache2
+sudo a2dismod mpm_event
+sudo a2dismod mpm_worker
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+sudo a2enmod rewrite
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+cd ../../work/dockers/mysql/5.7/
+docker-compose up -d
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+nvm use 16
+npm i -g yarn typescript
+cd ../..
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+echo 'deb [trusted=yes] https://repo.symfony.com/apt/ /' | sudo tee /etc/apt/sources.list.d/symfony-cli.list
+sudo apt update
+sudo apt install symfony-cli
+cd /win/d/soft/deb/
+ls -la
+sudo dpkg -i *.dev
+sudo dpkg -i *.deb
+exit
+
+sudo apt ф
+cd Загрузки/
+sudo dpkg -i *.deb
+sudo apt install --fix-broken
+sudo apt autoremove 
+./install.sh -t all -l ubuntu --tweks image square
+./install.sh -t all -l ubuntu --tweaks image square
+sudo apt install libsass1 sassc
+./install.sh -t all -l ubuntu --tweaks image square
+sudo apt update
+sudo apt upgrade 
+sudo apt install git curl zsh mc guake htop unzip network-manager network-manager-gnome 
+sudo apt update
+sudo apt install zsh ubuntu-restricted-extras libavcodec-extra libdvd-pkg adobe-flashplugin gnome-tweak-tool chrome-gnome-shell
+mc
+cd /win/d/soft/deb
+sudo dpkg -i *.deb
+sudo apt install --fix-broken
+sudo ufw allow in 80/tcp
+sudo a2dismod mpm_event
+sudo a2dismod mpm_worker
+sudo a2enmod mpm_prefork
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+sudo a2enmod rewrite
+ls -la
+ls -la | grep composer
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo apt install     ca-certificates     curl     gnupg     lsb-release
+sudo apt autoremove 
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt install conky
+sudo apt install build-essential checkinstall
+sudo apt install libssl-dev
+sudo apt install wget uget
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+source /etc/profile
+exit
+/home/alex/scripts/conky.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+nvm use 16
+npm i -g yarn typescript
+echo 'deb [trusted=yes] https://repo.symfony.com/apt/ /' | sudo tee /etc/apt/sources.list.d/symfony-cli.list
+sudo apt update
+sudo apt install symfony-cli
+sudo apt upgrade 
+sudo apt update
+sudo apt upgrade 
+sudo apt install ubuntu-restricted-extras libavcodec-extra libdvd-pkg gnome-tweak-tool chrome-gnome-shell zsh deluge deluged deluge-gtk deluge-common 
+sudo apt install wget curl
+cd /win/d/soft/deb/
+ls
+rm atom-amd64.deb 
+rm microsoft-edge-stable_100.0.1185.50-1_amd64.deb 
+rm code_1.66.2-1649664567_amd64.deb 
+sudo dpkg -i *.deb
+sudo apt install --fix-broken
+sudo apt autoremove 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~
+cp .zshrc .zshrc_back
+rm -rf .oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install git
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh
+zsh
+ls -A api/migrations/**/*.php
+ls -A api/migrations/**/*/*.php
+ls -A api/migrations/**/**/*.php
+cd api
+clear
+ls -A migrations/**/*.php
+ls -A migrations/**/*/*.php
+ls -A migrations/*/*/*.php
+ls -A migrations/**/**/*.php
+ls -A migrations/***/*.php
+ls -A migrations/***/***/*.php
+ls -A migrations/*****/*****/*.php
+sudo apt update
+sudo apt in
+sudo apt install git zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install curl
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp .zshrc_back .zshrc
+zsh
+sudo apt install wget curl
+sudo apt install build-essential checkinstall libssl-dev
+chsh
+cd /win/d/soft/deb/
+ls -la
+sudo dpkg -i *.deb
+sudo apt install --fixbroken
+sudo apt install --fix-broken
+sudo apt autoremove 
+sudo apt install ubuntu-restricted-extras libavcodec-extra libdvd-pkg gnome-tweak-tool chrome-gnome-shell
+sudo add-apt-repository ppa:atareao/telegram
+sudo add-apt-repository ppa:ondrej/php
+sudo apt install telegram
+sudo apt install flameshot
+make mysqlrestore cib-data rsv-startgame-02-08-2022-00:36.sql.gz
+exit
+sudo snap update
+sudo snap help
+sudo snap refresh
+sudo snap install postman
+sudo cp /usr/share/X11/xkb/rules/evdev.xml /usr/share/X11/xkb/rules/evdev.xml.back
+sudo gedit /usr/share/X11/xkb/rules/evdev.xml
+sudo apt update
+sudo apt upgrade 
+cd /win/d/soft/deb/
+ls -la
+sudo dpkg -i *.deb
+sudo apt install curl
+sudo apt install --fix-broken
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo add-apt-repository ppa:atareao/telegram
+sudo apt install zsh curl telegram neofetch git sublime-text apt-transport-https
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo chsh
+zsh
+htoppppppppppppp
+htop
+sudo htop
+mount
+sudo mount
+cd ~/work/repos/job-quest-backend/
+git fetch
+git st
+git add .
+git ci -m 'add fix achievement command'
+git co dev
+git pull origin dev
+git co -b shop-achievement
+git st
+git add .
+git ci -m 'add shop achievement'
+git push origin hotfix-achievement 
+git push origin hotfix-errors 
+git push origin shop-achievement 
+cat ~/work/docs/доступы.txt 
+git st
+git co dev
+git fetch
+git pull origin dev
+git co -b new-images
+git st
+git add .
+git ci -m 'add new images'
+git push origin new-images
+ssh testsite@192.168.2.210
+cat ~/work/docs/доступы.txt 
+ssh testsite@192.168.2.210
+sudo su
+sudo apt update
+cd /win/d/soft/deb/
+mc
+cp ~/Загрузки/anydesk_6.2.0-1_amd64.deb .
+ls -la
+rm anydesk_6.1.1-1_amd64.deb 
+sudo dpkg -i *
+sudo dpkg -i *.deb
+sudo add-apt-repository ppa:ondrej/php
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo add-apt-repository ppa:atareao/telegram
+sudo apt update
+sudo rm /etc/apt/sources.list.d/atareao-telegram-jammy.list 
+sudo apt update
+sudo apt install telegram-desktop git curl wget mc zsh
+sudo apt install --fix-broken
+sudo apt install telegram-desktop git curl wget mc zsh
+sudo apt upgrade 
+sudo apt install flameshot
+sudo apt update
+sudo apt upgrade 
+sudo apt update
+sudo apt a
+sudo apt install zsh git curl flameshot
+cp .zshrc .zshrc.back
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf .oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo chsh
+which zsh
+sudo chsh
+sudo reboot
+cp .zshrc.back .zshrc
+exit
+sudo apt update
+sudo apt upgrade 
+sudo apt install zsh git guake flameshot neofetch mc
+cat .zshrc.back 
+cat .zshrc_back 
+rm -rf .oh-my-zsh/
+sudo apt install curl wget
+zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp .zshrc.back .zshrc
+sudo apt update
+sudo add-apt-repository ppa:ondrej/php
+zsh
+sudo tar xJf tsetup.4.5.3.tar.xz -C /opt/
+sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
+sudo apt install git zsh guake
+sudo apt update
+sudo apt upgrade 
+sudo apt update
+sudo dpkg -i *.deb
+sudo chsh 
+rm -rf .oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+mc
+rm -rf .themes/Marwaita\ *
+rm -rf .themes/Nordic-Polar/
+rm -rf .icons/Rowaita-*
+rm -rf .icons/Rowaita/
+sudo apt update 
+sudo apt upgrade 
+cd /win/d/soft/deb/
+ls -la
+rm notable_1.8.4_amd64.deb 
+sudo dpkg -i *.d
+sudo dpkg -i *.deb
+sudo apt install --fix-broken
+sudo apt update 
+sudo apt upgrade 
+sudo apt install apt-transport-https audacious build-essential ca-certificates checkinstall cheese conky curl doublecmd-gtk fbreader filezilla flameshot gimp git gnupg-agent guake htop lsb-release mc mednaffe neofetch openjdk-8-jdk php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-intl php7.4-imap php7.4-imagick php8.0 php8.0-mysql php8.0-sqlite3 php8.0-curl php8.0-cgi php8.0-gd php8.0-zip php8.0-mbstring php8.0-xml php8.0-xmlrpc php8.0-common php8.0-intl php8.0-imap php8.0-imagick php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-intl php8.1-imap php8.1-imagick p7zip python3-apport python3-problem-report quadrapassel qbittorrent software-properties-common sqlite3 sublime-text tree unzip vagrant virtualbox vlc wget wkhtmltopdf xvfb zsh
+sudo add-apt-repository ppa:ondrej/php
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo apt upgrade 
+sudo apt install apt-transport-https audacious build-essential ca-certificates checkinstall cheese conky curl doublecmd-gtk fbreader filezilla flameshot gimp git gnupg-agent guake htop lsb-release mc mednaffe neofetch openjdk-8-jdk php7.4 php7.4-mysql php7.4-sqlite3 php7.4-curl php7.4-json php7.4-cgi php7.4-gd php7.4-zip php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-common php7.4-intl php7.4-imap php7.4-imagick php8.0 php8.0-mysql php8.0-sqlite3 php8.0-curl php8.0-cgi php8.0-gd php8.0-zip php8.0-mbstring php8.0-xml php8.0-xmlrpc php8.0-common php8.0-intl php8.0-imap php8.0-imagick php8.1 php8.1-mysql php8.1-sqlite3 php8.1-curl php8.1-cgi php8.1-gd php8.1-zip php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-common php8.1-intl php8.1-imap php8.1-imagick p7zip python3-apport python3-problem-report quadrapassel qbittorrent software-properties-common sqlite3 sublime-text tree unzip vagrant virtualbox vlc wget wkhtmltopdf xvfb zsh
+sudo apt autoremove 
+sudo apt autoclean 
+sudo apt update 
+sudo apt upgrade 
+sudo apt install gnome-remote-desktop update-notifier update-notifier-common
+sudo apt update
+sudo apt upgrade 
+sudo apt autoremove 
+sudo apt autoclean 
+sudo apt purge guake
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo add-apt-repository ppa:mozillateam/ppa
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+cat /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+sudo nano /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+sudo apt install firefox
+sudo apt purge firefox
+sudo snap list
+sudo snap remove firefox
+sudo apt update
+sudo apt upgrade 
+cd /win/d/soft/deb/
+sudo dpkg -i *.deb
+sudo apt install --fix-broken
+sudo apt install zsh
+sudo chsh -s $(which zsh)
+sudo reboot
+sudo chsh
+sudo reboot
+mc
+zsh
+sudo apt purge zsh
+cp .zshrc .zshrc.back 
+sudo apt purge zsh
+cp .zshrc .zshrc.back 
+sudo apt autoremove 
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+zsh
+sudo chsh
+zsh
+sudo apt install fzf
+BV
+mc
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install apt-transport-https  build-essential ca-certificates checkinstall cheese conky curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk  p7zip python3-apport python3-problem-report  software-properties-common sqlite3 tree unzip virtualbox vlc wget wkhtmltopdf xvfb zsh
+sudo apt install apt-transport-https  build-essential ca-certificates checkinstall cheese curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk  p7zip python3-apport python3-problem-report  software-properties-common sqlite3 tree unzip virtualbox vlc wget wkhtmltopdf xvfb zsh
+sudo apt upgrade 
+sudo apt a
+sudo apt upgrade 
+sudo apt autoremove 
+cd Загрузки/
+sudo dpkg -i *.deb
+sudo apt install -f
+sudo apt update
+sudo apt upgrade 
+sudo apt autoremove 
+cd ..
+rm -rf .oh-my-zsh/
+cp .zshrc .zshrc.back
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp .zshrc .zshrc.bak
+gnome-terminal
+dconf reset -f /org/gnome/terminal/
+sudo apt install apt-transport-https  build-essential ca-certificates checkinstall cheese conky curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk  p7zip python3-apport python3-problem-report  software-properties-common sqlite3 tree unzip virtualbox vlc wget wkhtmltopdf xvfb zsh
+sudo apt install apt-transport-https  build-essential ca-certificates checkinstall cheese curl fbreader filezilla flameshot gimp git gnupg-agent htop lsb-release mc mednaffe neofetch openjdk-8-jdk  p7zip python3-apport python3-problem-report  software-properties-common sqlite3 tree unzip virtualbox vlc wget wkhtmltopdf xvfb zsh
+rm -rf .oh-my-zsh/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+traceroute 192.168.2.210
+ssh  testsite@192.168.2.210
+ssh -v  testsite@192.168.2.210
+route -n
+nano /etc/docker/daemon.json 
+ip -c -br a
+sudo nano /etc/sysctl.conf 
+sudo sysctl -p
+route -n
+ip -c -br a
+ssh -v  testsite@192.168.2.210
+sudo apt install powerline fonts-powerline -y
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+vim .zshrc
+sudo apt install rbenv
+zsh
+mc
+docker --version
+docker compose version
+sudo reboot

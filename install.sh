@@ -163,7 +163,14 @@ link_path() {
 }
 
 install_links() {
+  link_path "$dotfiles_dir/mc/config" "$config_home/mc"
+  link_path "$dotfiles_dir/mc/.selected_editor" "$HOME/.selected_editor"
+  link_path "$dotfiles_dir/bash/.bash_aliases" "$HOME/.bash_aliases"
+  link_path "$dotfiles_dir/bash/.bash_logout" "$HOME/.bash_logout"
+  link_path "$dotfiles_dir/bash/.bashrc" "$HOME/.bashrc"
+  link_path "$dotfiles_dir/bash/.profile" "$HOME/.profile"
   link_path "$dotfiles_dir/git/.gitconfig" "$HOME/.gitconfig"
+  link_path "$dotfiles_dir/zsh/.zsh_aliases" "$HOME/.zsh_aliases"
   link_path "$dotfiles_dir/zsh/.zshrc" "$HOME/.zshrc"
   link_path "$dotfiles_dir/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
   link_path "$dotfiles_dir/micro" "$config_home/micro"
@@ -218,6 +225,23 @@ install_zsh_history_template() {
   run cp "$source" "$target"
 }
 
+install_bash_history_template() {
+  local source="$dotfiles_dir/bash/.bash_history.template"
+  local target="$HOME/.bash_history"
+
+  if [[ ! -f "$source" ]]; then
+    return 0
+  fi
+
+  if [[ -e "$target" ]]; then
+    log "skip: $target already exists"
+    return 0
+  fi
+
+  log "copy: $source -> $target"
+  run cp "$source" "$target"
+}
+
 install_vscode_extensions() {
   local extensions_file="$dotfiles_dir/vscode/extensions.txt"
 
@@ -244,6 +268,7 @@ install_git_local_config
 install_oh_my_zsh
 install_omz_plugins
 install_links
+install_bash_history_template
 install_zsh_history_template
 install_vscode_extensions
 
