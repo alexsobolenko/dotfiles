@@ -7,9 +7,11 @@ docker.docker
 donjayamanne.githistory
 eamodio.gitlens
 editorconfig.editorconfig
+github.copilot-chat
 golang.go
 ionutvmi.path-autocomplete
 mblode.twig-language-2
+mechatroner.rainbow-csv
 miguelsolorio.symbols
 mikestead.dotenv
 ms-azuretools.vscode-containers
