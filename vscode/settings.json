@@ -27,6 +27,9 @@
     "chat.disableAIFeatures": true,
     "chat.mcp.gallery.enabled": true,
 
+    // -- claude code --
+    "claudeCode.preferredLocation": "sidebar",
+
     // -- debug --
     "debug.focusWindowOnBreak": false,
     "debug.showBreakpointsInOverviewRuler": false,

@@ -18,16 +18,19 @@ config.font_size = 13
 
 -- colors
 config.color_scheme = "Dark+"
--- config.color_scheme = "Monokai Vivid"
--- config.color_scheme = "Espresso Libre"
 local scheme_def = wezterm.color.get_builtin_schemes()[config.color_scheme]
 config.colors = {
-  tab_bar = {
-    active_tab = {
-      bg_color = scheme_def.background,
-      fg_color = scheme_def.foreground,
-    }
-  }
+    tab_bar = {
+        active_tab = {
+            bg_color = scheme_def.background,
+            fg_color = scheme_def.foreground,
+        }
+    },
+    scrollbar_thumb = "#5f5f5f",
+}
+config.inactive_pane_hsb = {
+    brightness = 0.8,
+    saturation = 0.9,
 }
 
 -- appearance
@@ -47,19 +50,21 @@ config.window_padding = {
 }
 config.window_decorations = "TITLE|RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
+config.scrollback_lines = 5000
+config.enable_scroll_bar = true
+
+-- cursor
+config.default_cursor_style = "BlinkingBlock"
+config.cursor_blink_rate = 500
 
 -- keys
 config.keys = {
-    {key="1", mods="ALT", action=wezterm.action{ActivateTab=0}},
-    {key="2", mods="ALT", action=wezterm.action{ActivateTab=1}},
-    {key="3", mods="ALT", action=wezterm.action{ActivateTab=2}},
-    {key="4", mods="ALT", action=wezterm.action{ActivateTab=3}},
-    {key="5", mods="ALT", action=wezterm.action{ActivateTab=4}},
-    {key="6", mods="ALT", action=wezterm.action{ActivateTab=5}},
-    {key="7", mods="ALT", action=wezterm.action{ActivateTab=6}},
-    {key="8", mods="ALT", action=wezterm.action{ActivateTab=7}},
-    {key="9", mods="ALT", action=wezterm.action{ActivateTab=8}},
+    { key = "C", mods = "CTRL|SHIFT", action = wezterm.action.CopyTo("Clipboard") },
+    { key = "V", mods = "CTRL|SHIFT", action = wezterm.action.PasteFrom("Clipboard") },
 }
+for i = 1, 9 do
+    table.insert(config.keys, { key = tostring(i), mods = "ALT", action = wezterm.action.ActivateTab(i - 1) })
+end
 
 return config
 

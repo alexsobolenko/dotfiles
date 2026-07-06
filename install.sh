@@ -7,6 +7,7 @@ config_home="${XDG_CONFIG_HOME:-"$HOME/.config"}"
 vscode_user_dir="${VSCODE_USER_DIR:-"$config_home/Code/User"}"
 omz_dir="${OMZ:-"$HOME/.oh-my-zsh"}"
 omz_custom_dir="$omz_dir/custom"
+nvm_dir="${NVM_DIR:-"$HOME/.nvm"}"
 
 dry_run=0
 
@@ -24,6 +25,7 @@ Environment:
   XDG_CONFIG_HOME    Base config directory (default: ~/.config)
   VSCODE_USER_DIR    VS Code User directory (default: ~/.config/Code/User)
   OMZ                Oh My Zsh directory (default: ~/.oh-my-zsh)
+  NVM_DIR            nvm directory (default: ~/.nvm)
 USAGE
 }
 
@@ -62,15 +64,15 @@ run() {
 require_commands() {
   local missing=0
 
-  for command in code curl git micro wezterm zsh; do
+  for command in code curl git mc micro wezterm zsh; do
     if ! command -v "$command" >/dev/null 2>&1; then
       echo "Missing required command: $command" >&2
       missing=1
     fi
   done
 
-  if [[ ! -s "$HOME/.nvm/nvm.sh" ]]; then
-    echo "Missing required file: $HOME/.nvm/nvm.sh" >&2
+  if [[ ! -s "$nvm_dir/nvm.sh" ]]; then
+    echo "Missing required file: $nvm_dir/nvm.sh" >&2
     missing=1
   fi
 
