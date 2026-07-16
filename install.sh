@@ -64,7 +64,7 @@ run() {
 require_commands() {
   local missing=0
 
-  for command in code curl git mc micro wezterm zsh; do
+  for command in batcat code curl git mc micro wezterm zsh; do
     if ! command -v "$command" >/dev/null 2>&1; then
       echo "Missing required command: $command" >&2
       missing=1

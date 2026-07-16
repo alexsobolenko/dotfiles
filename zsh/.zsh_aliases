@@ -1,4 +1,4 @@
 alias zshconfig="micro ~/.zshrc"
 alias ohmyzsh="micro ~/.oh-my-zsh"
 alias cls="colorls"
-alias ccat="pygmentize -O style=monokai -g"
+alias bat="batcat"

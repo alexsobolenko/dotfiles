@@ -44,8 +44,6 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-ZSH_COLORIZE_TOOL="pygmentize"
-
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi

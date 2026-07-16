@@ -5,7 +5,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias ccat="pygmentize -O style=monokai -g"
+alias bat="batcat"
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
