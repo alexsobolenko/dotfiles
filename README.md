@@ -9,9 +9,10 @@ Run:
 ```
 
 The script checks required commands, installs Oh My Zsh dependencies and creates
-symlinks for Git, Zsh, Micro, WezTerm and VS Code. Existing application config paths
-are removed and replaced with symlinks. VS Code extensions are installed from
-`vscode/extensions.txt`.
+symlinks for Git, Zsh, Micro, Neovim, WezTerm and VS Code. Existing application config
+paths are removed and replaced with symlinks. VS Code extensions are installed from
+`vscode/extensions.txt`. Neovim plugins and LSP servers are installed headlessly
+(`lazy.nvim` sync + `:MasonToolsInstallSync`).
 
 VS Code extensions are installed with `--force`. VS Code may still ask to trust
 an extension publisher on first use.
@@ -80,6 +81,20 @@ an alternative without Ruby has not been selected yet.
 1. Install `mc`
 2. ln -s ~/dotfiles/mc/config ~/.config/mc
 3. ln -s ~/dotfiles/mc/.selected_editor ~/.selected_editor
+
+## NEOVIM
+
+1. Install `neovim`
+2. Install `npm` (Node.js) — most LSP servers (Mason) are installed via npm
+3. Install `ripgrep` (`rg`) — required by Telescope's live grep
+4. Install a C compiler (`gcc`/`clang`) — required by `nvim-treesitter` to build parsers
+5. ln -s ~/dotfiles/nvim ~/.config/nvim
+6. `nvim --headless "+Lazy! sync" +qa` to install plugins
+7. `nvim --headless "+MasonToolsInstallSync" +qa` to install LSP servers
+
+PHP/JS static analysis tools (`phpcs`, `phpstan`, `psalm`, `eslint`, `stylelint`) are
+picked up from the project itself (`vendor/bin`, `node_modules/.bin`) and are not
+installed globally — install them per-project via Composer/npm as needed.
 
 ## VISUAL STUDIO CODE
 

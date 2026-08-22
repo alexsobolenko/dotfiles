@@ -15,7 +15,8 @@ usage() {
   cat <<'USAGE'
 Usage: ./install.sh [options]
 
-Install personal dotfiles, Oh My Zsh dependencies and VS Code extensions.
+Install personal dotfiles, Oh My Zsh dependencies, VS Code extensions and Neovim
+plugins/LSP servers.
 
 Options:
   -n, --dry-run   Show what would be changed without touching files
@@ -64,7 +65,7 @@ run() {
 require_commands() {
   local missing=0
 
-  for command in batcat code curl git mc micro wezterm zsh; do
+  for command in batcat code curl git mc micro npm nvim rg unzip wezterm zsh; do
     if ! command -v "$command" >/dev/null 2>&1; then
       echo "Missing required command: $command" >&2
       missing=1
@@ -73,6 +74,12 @@ require_commands() {
 
   if [[ ! -s "$nvm_dir/nvm.sh" ]]; then
     echo "Missing required file: $nvm_dir/nvm.sh" >&2
+    missing=1
+  fi
+
+  # nvim-treesitter needs a C compiler to build parsers; any of these will do
+  if ! { command -v cc || command -v gcc || command -v clang; } >/dev/null 2>&1; then
+    echo "Missing required command: a C compiler (cc, gcc or clang)" >&2
     missing=1
   fi
 
@@ -176,6 +183,7 @@ install_links() {
   link_path "$dotfiles_dir/zsh/.zshrc" "$HOME/.zshrc"
   link_path "$dotfiles_dir/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
   link_path "$dotfiles_dir/micro" "$config_home/micro"
+  link_path "$dotfiles_dir/nvim" "$config_home/nvim"
   link_path "$dotfiles_dir/wezterm" "$config_home/wezterm"
   link_path "$dotfiles_dir/vscode" "$vscode_user_dir"
 }
@@ -265,6 +273,14 @@ install_vscode_extensions() {
   done < "$extensions_file"
 }
 
+install_nvim_plugins() {
+  log "install: nvim plugins (lazy.nvim sync)"
+  run nvim --headless "+Lazy! sync" +qa
+
+  log "install: nvim LSP servers (mason)"
+  run nvim --headless "+MasonToolsInstallSync" +qa
+}
+
 require_commands
 install_git_local_config
 install_oh_my_zsh
@@ -273,5 +289,6 @@ install_links
 install_bash_history_template
 install_zsh_history_template
 install_vscode_extensions
+install_nvim_plugins
 
 log "Done."
