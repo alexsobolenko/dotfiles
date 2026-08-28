@@ -8,11 +8,7 @@ return {
             border = "rounded",
         })
 
-        -- mappings
-        vim.keymap.set("n", "<leader>mp", ":Glow<CR>", {
-            desc = "Markdown preview",
-            noremap = true,
-            silent = true,
-        })
+        local utils = require("extras.utils")
+        utils.keymap("n", "<leader>mp", ":Glow<CR>", "Markdown preview")
     end,
 }

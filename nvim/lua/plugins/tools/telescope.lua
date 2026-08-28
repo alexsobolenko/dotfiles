@@ -22,37 +22,13 @@ return {
             },
         })
 
-        -- mappings
         local builtin = require('telescope.builtin')
-        vim.keymap.set("n", "<leader>ff", builtin.find_files, {
-            desc = "Find files",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>fw", builtin.live_grep, {
-            desc = "Find words",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>fb", builtin.buffers, {
-            desc = "Find buffers",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, {
-            desc = "LSP document symbols",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "gr", builtin.lsp_references, {
-            desc = "Go to references",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "gd", builtin.lsp_definitions, {
-            desc = "Go to definition",
-            noremap = true,
-            silent = true,
-        })
+        local utils = require("extras.utils")
+        utils.keymap("n", "<leader>ff", builtin.find_files, "Find files")
+        utils.keymap("n", "<leader>fw", builtin.live_grep, "Find words")
+        utils.keymap("n", "<leader>fb", builtin.buffers, "Find buffers")
+        utils.keymap("n", "<leader>ls", builtin.lsp_document_symbols, "LSP document symbols")
+        utils.keymap("n", "gr", builtin.lsp_references, "Go to references")
+        utils.keymap("n", "gd", builtin.lsp_definitions, "Go to definition")
     end,
 }

@@ -2,16 +2,10 @@ return {
     "alexsobolenko/code-toolkit.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-        -- mappings
-        vim.keymap.set({ "n", "x" }, "<leader>cc", "<cmd>CodeToolkitToggleCase<cr>", {
-            desc = "Toggle case (picker)",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>cm", "<cmd>CodeToolkitToggleMultilineExpression<cr>", {
-            desc = "Toggle multiline expression",
-            noremap = true,
-            silent = true
-        })
+        local utils = require("extras.utils")
+        utils.keymap({ "n", "x" }, "<leader>cc", "<cmd>CodeToolkitToggleCase<cr>", "Toggle case (picker)")
+        utils.keymap("n", "<leader>cm", "<cmd>CodeToolkitToggleMultilineExpression<cr>", "Toggle multiline expression")
+        utils.keymap({ "n", "x" }, "<M-e>", "<cmd>CodeToolkitFastWrap<cr>", "Fast wrap")
+        utils.keymap("n", "<leader>cp", "<cmd>CodeToolkitToggleAutopairs<cr>", "Toggle autopairs")
     end,
 }

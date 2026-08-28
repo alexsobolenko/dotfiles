@@ -1,43 +1,32 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
--- save / search
-vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save buffer" })
-vim.keymap.set("n", "<leader>/", ":nohlsearch<CR>", { desc = "Reset search highlights" })
+local utils = require("extras.utils")
 
--- keep the cursor centered when scrolling half a page or jumping between search matches
-vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down, centered" })
-vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up, centered" })
-vim.keymap.set("n", "n", "nzzzv", { desc = "Next search match, centered" })
-vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search match, centered" })
-
--- numbers
-vim.keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
-vim.keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
-
--- diagnostics
-vim.keymap.set("n", "]d", function()
+local function next_diagnostic()
     vim.diagnostic.jump({ count = 1 })
-end, { desc = "Next diagnostic" })
-vim.keymap.set("n", "[d", function()
+end
+
+local function prev_diagnostic()
     vim.diagnostic.jump({ count = -1 })
-end, { desc = "Previous diagnostic" })
+end
 
--- move the current line / selection up and down, reindenting as it moves
-vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
-vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
-vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
-vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
-
--- indent visual selection without losing it (default `<`/`>` exit visual mode)
-vim.keymap.set("v", "<", "<gv", { desc = "Indent left, keep selection" })
-vim.keymap.set("v", ">", ">gv", { desc = "Indent right, keep selection" })
-
--- yank / paste
-vim.keymap.set("n", "Y", "y$", { desc = "Yank to end of line" })
--- delete the replaced selection into the black hole register so the paste
--- register (what you copied before) survives for the next paste
-vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting register" })
-
--- insert mode
-vim.keymap.set("i", "jj", "<Esc>", { desc = "Escape" })
+utils.keymap("n", "<leader>w", ":w<CR>", "Save buffer")
+utils.keymap("n", "<leader>/", ":nohlsearch<CR>", "Reset search highlights")
+utils.keymap("n", "<C-d>", "<C-d>zz", "Scroll down, centered")
+utils.keymap("n", "<C-u>", "<C-u>zz", "Scroll up, centered")
+utils.keymap("n", "n", "nzzzv", "Next search match, centered")
+utils.keymap("n", "N", "Nzzzv", "Previous search match, centered")
+utils.keymap("n", "<leader>+", "<C-a>", "which_key_ignore")
+utils.keymap("n", "<leader>-", "<C-x>", "which_key_ignore")
+utils.keymap("n", "]d", next_diagnostic, "Next diagnostic")
+utils.keymap("n", "[d", prev_diagnostic, "Previous diagnostic")
+utils.keymap("n", "<A-j>", ":m .+1<CR>==", "Move line down")
+utils.keymap("n", "<A-k>", ":m .-2<CR>==", "Move line up")
+utils.keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", "Move selection down")
+utils.keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", "Move selection up")
+utils.keymap("v", "<", "<gv", "Indent left, keep selection")
+utils.keymap("v", ">", ">gv", "Indent right, keep selection")
+utils.keymap("n", "Y", "y$", "Yank to end of line")
+utils.keymap("x", "<leader>p", [["_dP]], "Paste without overwriting register")
+utils.keymap("i", "jj", "<Esc>", "Escape")

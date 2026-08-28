@@ -7,6 +7,7 @@ return {
     },
     config = function()
         local icons = require("extras.icons")
+        local utils = require("extras.utils")
 
         local function close_buffer(bufnr)
             local alternatives = vim.fn.getbufinfo({ buflisted = 1 })
@@ -79,28 +80,29 @@ return {
             },
         })
 
-        -- mappings
-        vim.keymap.set("n", "<Tab>", function()
+        local switch_neotree_focus = function()
             if vim.bo.filetype == "neo-tree" then
                 vim.cmd("wincmd p")
             else
                 vim.cmd("Neotree focus")
             end
-        end, { desc = "Toggle focus: neo-tree", noremap = true, silent = true })
-        vim.keymap.set("n", "<leader>bc", function()
-            close_buffer(vim.api.nvim_get_current_buf())
-        end, {
-            desc = "Close buffer",
-            noremap = true,
-            silent = true,
-        })
+        end
 
+        local function close_buffer_at(index)
+            if index == nil then
+                close_buffer(vim.api.nvim_get_current_buf())
+                return
+            end
+            require("bufferline").exec(index, function(element)
+                close_buffer(element.id)
+            end)
+        end
+
+        utils.keymap("n", "<Tab>", switch_neotree_focus, "Toggle focus: neo-tree")
+        utils.keymap("n", "<leader>bc", function() close_buffer_at(nil) end, "Close buffer")
         for i = 1, 9 do
-            vim.keymap.set("n", "<leader>" .. i, ":BufferLineGoToBuffer " .. i .. "<CR>", {
-                desc = "which_key_ignore",
-                noremap = true,
-                silent = true,
-            })
+            utils.keymap("n", "<leader>" .. i, ":BufferLineGoToBuffer " .. i .. "<CR>", "which_key_ignore")
+            utils.keymap("n", "<leader>b" .. i, function() close_buffer_at(i) end, "which_key_ignore")
         end
     end,
 }

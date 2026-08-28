@@ -69,6 +69,7 @@ return {
                 "sockets",
                 "sodium",
                 "SOAP",
+                "SPL",
                 "sqlite3",
                 "standard",
                 "tokenizer",

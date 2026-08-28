@@ -28,7 +28,6 @@ return {
             return math.min(base_width + math.floor((columns - base_columns) * 0.2), 90)
         end
 
-        -- copy the focused node's name/path to the system clipboard
         local function copy_to_clipboard(get_value)
             return function(state)
                 local node = state.tree:get_node()

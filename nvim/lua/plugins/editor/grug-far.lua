@@ -3,14 +3,14 @@
 return {
     "MagicDuck/grug-far.nvim",
     config = function()
-        require("grug-far").setup({})
+        require("grug-far").setup()
 
-        vim.keymap.set("n", "<leader>fr", function()
+        local utils = require("extras.utils")
+        local function find_in_file()
             require("grug-far").open({ prefills = { paths = vim.fn.expand("%") } })
-        end, { desc = "Find and replace in current file", noremap = true, silent = true })
+        end
 
-        vim.keymap.set("n", "<leader>fR", function()
-            require("grug-far").open()
-        end, { desc = "Find and replace in project", noremap = true, silent = true })
+        utils.keymap("n", "<leader>fr", find_in_file, "Find and replace in current file")
+        utils.keymap("n", "<leader>fR", "<cmd>GrugFar<cr>", "Find and replace in project")
     end,
 }

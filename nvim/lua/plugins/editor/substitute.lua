@@ -4,52 +4,18 @@ return {
     "gbprod/substitute.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
+        local utils = require("extras.utils")
+        local exchange = require("substitute.exchange")
         local substitute = require("substitute")
         substitute.setup()
 
-        -- mappings
-        vim.keymap.set("n", "s", substitute.operator, {
-            desc = "Substitute with motion",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "ss", substitute.line, {
-            desc = "Substitute line",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "S", substitute.eol, {
-            desc = "Substitute to end of line",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("x", "s", substitute.visual, {
-            desc = "Substitute in visual mode",
-            noremap = true,
-            silent = true,
-        })
-
-        -- exchange: mark two pieces of text (with the same mapping) to swap them
-        local exchange = require("substitute.exchange")
-        vim.keymap.set("n", "sx", exchange.operator, {
-            desc = "Exchange with motion",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "sxx", exchange.line, {
-            desc = "Exchange line",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("x", "X", exchange.visual, {
-            desc = "Exchange in visual mode",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "sxc", exchange.cancel, {
-            desc = "Cancel exchange",
-            noremap = true,
-            silent = true,
-        })
+        utils.keymap("n", "s", substitute.operator, "Substitute with motion")
+        utils.keymap("n", "ss", substitute.line, "Substitute line")
+        utils.keymap("n", "S", substitute.eol, "Substitute to end of line")
+        utils.keymap("x", "s", substitute.visual, "Substitute in visual mode")
+        utils.keymap("n", "sx", exchange.operator, "Exchange with motion")
+        utils.keymap("n", "sxx", exchange.line, "Exchange line")
+        utils.keymap("x", "X", exchange.visual, "Exchange in visual mode")
+        utils.keymap("n", "sxc", exchange.cancel, "Cancel exchange")
     end,
 }
