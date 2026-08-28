@@ -14,11 +14,6 @@ return {
                 theme = "auto",
                 component_separators = icons.statusbar.component_separators,
                 section_separators = icons.statusbar.section_separators,
-                disabled_filetypes = {
-                    "dashboard",
-                    "NvimTree",
-                    "Outline",
-                },
                 always_divide_middle = true,
             },
             sections = {
@@ -30,7 +25,6 @@ return {
                     },
                 },
                 lualine_b = {
-                    { "fileformat" },
                     { "filename" },
                     { "branch" },
                     { "diff", symbols = icons.statusbar.git },
@@ -49,6 +43,7 @@ return {
                         sources = { "nvim_diagnostic" },
                         symbols = icons.statusbar.diagnostics,
                     },
+                    { "fileformat" },
                     { "o:encoding", fmt = string.upper },
                     { "filetype" },
                     { "progress" },
@@ -70,7 +65,7 @@ return {
                 lualine_z = { "location" },
             },
             tabline = {},
-            extensions = { "fugitive", "nvim-tree", "quickfix" },
+            extensions = { "neo-tree", "quickfix", "lazy", "mason" },
         })
     end,
 }

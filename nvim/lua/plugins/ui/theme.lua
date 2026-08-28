@@ -1,8 +1,20 @@
--- monokai colorscheme neovim
+-- neovim colorscheme
+
+-- return {
+--     "tanvirtin/monokai.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--         require("monokai").setup()
+--     end,
+-- }
 
 return {
-    "tanvirtin/monokai.nvim",
+    "sainnhe/sonokai",
+    lazy = false,
+    priority = 1000,
     config = function()
-        require("monokai").setup()
+        vim.g.sonokai_enable_italic = true
+        vim.cmd.colorscheme("sonokai")
     end,
 }

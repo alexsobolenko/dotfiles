@@ -7,12 +7,10 @@ return {
         vim.api.nvim_create_autocmd("FileType", {
             pattern = "*",
             callback = function()
-                if vim.bo.filetype ~= "dashboard" then
-                    require("virt-column").setup({
-                        char = icons.indent.virtline,
-                        virtcolumn = "120",
-                    })
-                end
+                require("virt-column").setup({
+                    char = icons.indent.virtline,
+                    virtcolumn = "120",
+                })
             end,
         })
     end,

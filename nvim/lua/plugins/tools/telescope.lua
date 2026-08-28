@@ -39,26 +39,6 @@ return {
             noremap = true,
             silent = true,
         })
-        vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
-            desc = "Find help",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gb", builtin.git_branches, {
-            desc = "Git branches",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gc", builtin.git_commits, {
-            desc = "Git commits",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>gs", builtin.git_status, {
-            desc = "Git status",
-            noremap = true,
-            silent = true,
-        })
         vim.keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, {
             desc = "LSP document symbols",
             noremap = true,

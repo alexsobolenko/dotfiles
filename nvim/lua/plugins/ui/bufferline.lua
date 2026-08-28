@@ -7,10 +7,24 @@ return {
     },
     config = function()
         local icons = require("extras.icons")
+
+        local function close_buffer(bufnr)
+            local alternatives = vim.fn.getbufinfo({ buflisted = 1 })
+            for _, win in ipairs(vim.fn.win_findbuf(bufnr)) do
+                for _, buf in ipairs(alternatives) do
+                    if buf.bufnr ~= bufnr then
+                        vim.api.nvim_win_set_buf(win, buf.bufnr)
+                        break
+                    end
+                end
+            end
+            vim.api.nvim_buf_delete(bufnr, { force = true })
+        end
+
         require("bufferline").setup({
             options = {
-                close_command = "bdelete! %d",
-                right_mouse_command = "bdelete! %d",
+                close_command = close_buffer,
+                right_mouse_command = close_buffer,
                 left_mouse_command = "buffer %d",
                 buffer_close_icon = icons.bufferline.close,
                 numbers = "ordinal",
@@ -66,17 +80,16 @@ return {
         })
 
         -- mappings
-        vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", {
-            desc = "Next buffer",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", {
-            desc = "Previous buffer",
-            noremap = true,
-            silent = true,
-        })
-        vim.keymap.set("n", "<leader>bc", ":bd!<CR>", {
+        vim.keymap.set("n", "<Tab>", function()
+            if vim.bo.filetype == "neo-tree" then
+                vim.cmd("wincmd p")
+            else
+                vim.cmd("Neotree focus")
+            end
+        end, { desc = "Toggle focus: neo-tree", noremap = true, silent = true })
+        vim.keymap.set("n", "<leader>bc", function()
+            close_buffer(vim.api.nvim_get_current_buf())
+        end, {
             desc = "Close buffer",
             noremap = true,
             silent = true,
@@ -84,7 +97,7 @@ return {
 
         for i = 1, 9 do
             vim.keymap.set("n", "<leader>" .. i, ":BufferLineGoToBuffer " .. i .. "<CR>", {
-                desc = "Go to buffer " .. i,
+                desc = "which_key_ignore",
                 noremap = true,
                 silent = true,
             })

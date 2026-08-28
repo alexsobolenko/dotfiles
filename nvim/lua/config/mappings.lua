@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 -- save / search
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save buffer" })

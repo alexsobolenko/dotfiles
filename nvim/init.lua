@@ -30,10 +30,9 @@ require("lazy").setup({
         { import = "plugins/code" },
         { import = "plugins/editor" },
         { import = "plugins/git" },
-        { import = "plugins/lang/php" },
         { import = "plugins/tools" },
         { import = "plugins/ui" },
-  	},
+    },
     defaults = {
         lazy = false,
         version = false,

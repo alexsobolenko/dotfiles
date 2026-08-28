@@ -44,23 +44,23 @@ return {
                 end, "Previous git hunk")
 
                 -- stage / reset
-                map("n", "<leader>hs", gitsigns.stage_hunk, "Stage hunk")
-                map("n", "<leader>hr", gitsigns.reset_hunk, "Reset hunk")
-                map("v", "<leader>hs", function()
+                map("n", "<leader>gs", gitsigns.stage_hunk, "Stage hunk")
+                map("n", "<leader>gr", gitsigns.reset_hunk, "Reset hunk")
+                map("v", "<leader>gs", function()
                     gitsigns.stage_hunk({ vim.fn.line("."), vim.fn.line("v") })
                 end, "Stage hunk")
-                map("v", "<leader>hr", function()
+                map("v", "<leader>gr", function()
                     gitsigns.reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
                 end, "Reset hunk")
-                map("n", "<leader>hS", gitsigns.stage_buffer, "Stage buffer")
-                map("n", "<leader>hR", gitsigns.reset_buffer, "Reset buffer")
+                map("n", "<leader>gS", gitsigns.stage_buffer, "Stage buffer")
+                map("n", "<leader>gR", gitsigns.reset_buffer, "Reset buffer")
 
                 -- inspect
-                map("n", "<leader>hp", gitsigns.preview_hunk, "Preview hunk")
-                map("n", "<leader>hb", function()
+                map("n", "<leader>gp", gitsigns.preview_hunk, "Preview hunk")
+                map("n", "<leader>gb", function()
                     gitsigns.blame_line({ full = true })
                 end, "Blame line")
-                map("n", "<leader>hd", gitsigns.diffthis, "Diff this file")
+                map("n", "<leader>gd", gitsigns.diffthis, "Diff this file")
             end,
         })
     end,
