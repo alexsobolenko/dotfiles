@@ -48,6 +48,8 @@ return {
     config = function()
         require("nvim-treesitter").install(parsers)
 
+        vim.treesitter.language.register("twig", { "html.twig", "xml.twig", "text.twig" })
+
         vim.api.nvim_create_autocmd("FileType", {
             pattern = "*",
             callback = function()
