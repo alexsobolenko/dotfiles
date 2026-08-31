@@ -1,11 +1,10 @@
 -- neovim colorscheme
 
 return {
-    "sainnhe/sonokai",
+    "tanvirtin/monokai.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-        vim.g.sonokai_enable_italic = true
-        vim.cmd.colorscheme("sonokai")
+        require("monokai").setup()
     end,
 }
