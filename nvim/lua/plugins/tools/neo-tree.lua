@@ -57,6 +57,7 @@ return {
                 width = adaptive_width,
                 mappings = {
                     ["<space>"] = "none",
+                    ["<Tab>"] = "none",
                     ["gn"] = { "copy_name_to_clipboard", desc = "Copy name to clipboard" },
                     ["ga"] = { "copy_absolute_path_to_clipboard", desc = "Copy absolute path to clipboard" },
                     ["gr"] = { "copy_relative_path_to_clipboard", desc = "Copy relative path to clipboard" },
@@ -96,37 +97,6 @@ return {
         })
 
         require("neo-tree.command").execute({ action = "show", position = "left" })
-
-        do
-            local inputs = require("neo-tree.ui.inputs")
-            local original_show_input = inputs.show_input
-            inputs.show_input = function(input, callback)
-                original_show_input(input, callback)
-                if input.winid and vim.api.nvim_win_is_valid(input.winid) then
-                    vim.api.nvim_set_current_win(input.winid)
-                    vim.cmd("startinsert!")
-                end
-            end
-        end
-
-        do
-            local real_prompt_setcallback = vim.fn.prompt_setcallback
-            vim.fn.prompt_setcallback = function(buf, cb)
-                local wrapped = function(value)
-                    local ok, lines = pcall(vim.api.nvim_buf_get_lines, buf, 0, 1, false)
-                    if ok and lines[1] then
-                        local line = lines[1]
-                        local prompt = vim.fn.prompt_getprompt(buf)
-                        if prompt ~= "" and line:sub(1, #prompt) == prompt then
-                            line = line:sub(#prompt + 1)
-                        end
-                        return cb(line)
-                    end
-                    return cb(value)
-                end
-                return real_prompt_setcallback(buf, wrapped)
-            end
-        end
 
         vim.api.nvim_create_autocmd({ "FileType", "WinEnter", "CursorMoved" }, {
             callback = function(event)
