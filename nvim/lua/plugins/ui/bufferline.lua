@@ -32,12 +32,6 @@ return {
                 show_close_icons = true,
                 offsets = {
                     { rhs = 1, min = 0, max = 12 },
-                    {
-                        filetype = "neo-tree",
-                        text = "File Explorer",
-                        separator = true,
-                        padding = 0,
-                    },
                 },
                 mode = "buffers",
                 diagnostics = "nvim_lsp",
@@ -80,14 +74,6 @@ return {
             },
         })
 
-        local switch_neotree_focus = function()
-            if vim.bo.filetype == "neo-tree" then
-                vim.cmd("wincmd p")
-            else
-                vim.cmd("Neotree focus")
-            end
-        end
-
         local function close_buffer_at(index)
             if index == nil then
                 close_buffer(vim.api.nvim_get_current_buf())
@@ -98,7 +84,6 @@ return {
             end)
         end
 
-        utils.keymap("n", "<Tab>", switch_neotree_focus, "Toggle focus: neo-tree")
         utils.keymap("n", "<leader>bc", function() close_buffer_at(nil) end, "Close buffer")
         for i = 1, 9 do
             utils.keymap("n", "<leader>" .. i, ":BufferLineGoToBuffer " .. i .. "<CR>", "which_key_ignore")

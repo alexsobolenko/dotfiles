@@ -11,22 +11,13 @@ return {
     },
     config = function()
         local icons = require("extras.icons")
+        local utils = require("extras.utils")
 
         local function set_cursorline_hl()
             vim.api.nvim_set_hl(0, "NeoTreeCursorLine", { reverse = true })
         end
         set_cursorline_hl()
         vim.api.nvim_create_autocmd("ColorScheme", { callback = set_cursorline_hl })
-
-        local base_columns = 185
-        local base_width = 45
-        local function adaptive_width()
-            local columns = vim.o.columns
-            if columns <= base_columns then
-                return base_width
-            end
-            return math.min(base_width + math.floor((columns - base_columns) * 0.2), 90)
-        end
 
         local function copy_to_clipboard(get_value)
             return function(state)
@@ -54,7 +45,6 @@ return {
                 end),
             },
             window = {
-                width = adaptive_width,
                 mappings = {
                     ["<space>"] = "none",
                     ["<Tab>"] = "none",
@@ -96,17 +86,17 @@ return {
             },
         })
 
-        require("neo-tree.command").execute({ action = "show", position = "left" })
-
         vim.api.nvim_create_autocmd({ "FileType", "WinEnter", "CursorMoved" }, {
             callback = function(event)
                 if vim.bo[event.buf].filetype ~= "neo-tree" then
                     return
                 end
+
                 local winid = vim.fn.bufwinid(event.buf)
                 if winid == -1 then
                     return
                 end
+
                 vim.schedule(function()
                     if vim.api.nvim_win_is_valid(winid) then
                         vim.api.nvim_set_option_value("cursorline", true, { win = winid })
@@ -116,15 +106,6 @@ return {
             end,
         })
 
-        vim.api.nvim_create_autocmd("VimResized", {
-            callback = function()
-                for _, win in ipairs(vim.api.nvim_list_wins()) do
-                    local buf = vim.api.nvim_win_get_buf(win)
-                    if vim.bo[buf].filetype == "neo-tree" then
-                        vim.api.nvim_win_set_width(win, adaptive_width())
-                    end
-                end
-            end,
-        })
+        utils.keymap("n", "<leader>e", "<cmd>Neotree float<cr>", "Open file explorer")
     end,
 }

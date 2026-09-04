@@ -15,7 +15,7 @@ return {
         m_find_files = "󰈞",
         m_find_text = "",
         m_lazy = "",
-        m_mason = "",
+        m_git = "",
         m_quit = "󰈆",
     },
     diagnostic_signs = {
